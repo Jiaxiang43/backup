@@ -1,0 +1,55 @@
+ - HeapInfo    
+
+ --------------------------------------------------------------------------------------------
+         String Name          MemType        Start               End           Size(Bytes)
+ --------------------------------------------------------------------------------------------
+       1 gpL1MemMgrCtx           HEAP (0000000023f3e300 .. 0000000023ff29bf}        739,008
+       2 gpAuxOranIoIf           XRAN (00000002bed15240 .. 00000002bffd4467}     19,657,256
+       3 PolarQInfoTable         HEAP (00007f98984d1040 .. 00007f989d2f103f}     81,920,000
+       4 PolarQInfoSortTable     HEAP (00007f98936b0040 .. 00007f98984d003f}     81,920,000
+       5 PolarQInterleaverTa     HEAP (0000000024021cc0 .. 00000000240762bf}        345,600
+       6 PolarIndexTable         HEAP (0000000024076340 .. 000000002409d43f}        160,000
+       7 gpNr5gBsPhyStats        HEAP (00007f988a465d00 .. 00007f988b26279f}     14,666,400
+       8 gpNr5gBsPhyStats        HEAP (00007f987c000080 .. 00007f987cdfcb1f}     14,666,400
+       9 gpNr5gBsPhyStats        HEAP (00007f98497b98c0 .. 00007f984a5b635f}     14,666,400
+      10 gpNr5gBsPhyStats        HEAP (00007f984a5b63c0 .. 00007f984b3b2e5f}     14,666,400
+      11 gpNr5gBsPhyStats        HEAP (00007f9840dbc640 .. 00007f9841bb90df}     14,666,400
+      12 gpNr5gBsPhyStats        HEAP (00007f9841bb9140 .. 00007f98429b5bdf}     14,666,400
+      13 gpNr5gBsPhyStats        HEAP (00007f9844548c00 .. 00007f984534569f}     14,666,400
+      14 gpNr5gBsPhyStats        HEAP (00007f9845345700 .. 00007f984614219f}     14,666,400
+      15 gpNr5gBsPhyStats        HEAP (00007f9838000080 .. 00007f9838dfcb1f}     14,666,400
+      16 gpNr5gBsPhyStats        HEAP (00007f9838dfcb80 .. 00007f9839bf961f}     14,666,400
+      17 gpNr5gBsPhyStats        HEAP (00007f983c000080 .. 00007f983cdfcb1f}     14,666,400
+      18 gpNr5gBsPhyStats        HEAP (00007f983cdfcb80 .. 00007f983dbf961f}     14,666,400
+      19 gpNr5gBsPhyStats        HEAP (00007f97fc000080 .. 00007f97fcdfcb1f}     14,666,400
+      20 gpNr5gBsPhyStats        HEAP (00007f97fcdfcb80 .. 00007f97fdbf961f}     14,666,400
+      21 gpNr5gBsPhyStats        HEAP (00007f97f0000080 .. 00007f97f0dfcb1f}     14,666,400
+      22 gpNr5gBsPhyStats        HEAP (00007f97f0dfcb80 .. 00007f97f1bf961f}     14,666,400
+      23 gpNr5gBsPhyStats        HEAP (00007f97f4000080 .. 00007f97f4dfcb1f}     14,666,400
+      24 gpNr5gBsPhyStats        HEAP (00007f97f4dfcb80 .. 00007f97f5bf961f}     14,666,400
+      25 gpNr5gBsPhyStats        HEAP (00007f97e8000080 .. 00007f97e8dfcb1f}     14,666,400
+      26 gpNr5gBsPhyStats        HEAP (00007f97e8dfcb80 .. 00007f97e9bf961f}     14,666,400
+      27 gpNr5gBsPhyStats        HEAP (00007f97ec000080 .. 00007f97ecdfcb1f}     14,666,400
+      28 gpNr5gBsPhyStats        HEAP (00007f97ecdfcb80 .. 00007f97edbf961f}     14,666,400
+      29 gpNr5gBsPhyStats        HEAP (00007f97e0000080 .. 00007f97e0dfcb1f}     14,666,400
+      30 gpNr5gBsPhyStats        HEAP (00007f97e0dfcb80 .. 00007f97e1bf961f}     14,666,400
+      31 gpNr5gBsPhyStats        HEAP (00007f9794a91780 .. 00007f979588e21f}     14,666,400
+      32 gpNr5gBsPhyStats        HEAP (00007f979588e280 .. 00007f979668ad1f}     14,666,400
+      33 gpNr5gBsPhyStats        HEAP (00007f9788000080 .. 00007f9788dfcb1f}     14,666,400
+      34 gpNr5gBsPhyStats        HEAP (00007f9788dfcb80 .. 00007f9789bf961f}     14,666,400
+      35 gpNr5gBsPhyStats        HEAP (00007f978c000080 .. 00007f978cdfcb1f}     14,666,400
+      36 gpNr5gBsPhyStats        HEAP (00007f978cdfcb80 .. 00007f978dbf961f}     14,666,400
+      37 gpNr5gBsPhyStats        HEAP (00007f9780000080 .. 00007f9780dfcb1f}     14,666,400
+      38 gpNr5gBsPhyStats        HEAP (00007f9780dfcb80 .. 00007f9781bf961f}     14,666,400
+      39 gpNr5gBsPhyStats        HEAP (00007f9784000080 .. 00007f9784dfcb1f}     14,666,400
+      40 gpNr5gBsPhyStats        HEAP (00007f9784dfcb80 .. 00007f9785bf961f}     14,666,400
+      41 gpNr5gBsPhyStats        HEAP (00007f9778000080 .. 00007f9778dfcb1f}     14,666,400
+      42 gpNr5gBsPhyStats        HEAP (00007f9778dfcb80 .. 00007f9779bf961f}     14,666,400
+ --------------------------------------------------------------------------------------------
+                HEAP Buffers Alloc:        41 /         Size Alloc:    693,075,008
+                DPDK Buffers Alloc:         0 /         Size Alloc:              0
+                XRAN Buffers Alloc:         1 /         Size Alloc:     19,657,256
+               TOTAL Buffers Alloc:        42 /         Size Alloc:    712,732,264
+ --------------------------------------------------------------------------------------------
+
+

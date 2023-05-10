@@ -1,0 +1,37 @@
+ - HeapInfo    
+
+ --------------------------------------------------------------------------------------------
+         String Name          MemType        Start               End           Size(Bytes)
+ --------------------------------------------------------------------------------------------
+       1 gpL1MemMgrCtx           HEAP (0000000023f3c300 .. 0000000023ff09bf}        739,008
+       2 gpAuxOranIoIf           XRAN (00000002bed15240 .. 00000002bffd4467}     19,657,256
+       3 PolarQInfoTable         HEAP (00007f32c2065040 .. 00007f32c6e8503f}     81,920,000
+       4 PolarQInfoSortTable     HEAP (00007f32bd244040 .. 00007f32c206403f}     81,920,000
+       5 PolarQInterleaverTa     HEAP (000000002401fcc0 .. 00000000240742bf}        345,600
+       6 PolarIndexTable         HEAP (0000000024074340 .. 000000002409b43f}        160,000
+       7 pBsOutBeamIDFlatUL      HEAP (00007f328e6dfc40 .. 00007f328e6f103f}         70,656
+       8 pBsOutBeamIDFlatUL      HEAP (00007f328e6f10c0 .. 00007f328e7024bf}         70,656
+       9 pBsOutBeamIDFlatUL      HEAP (00007f328d891a80 .. 00007f328d8a2e7f}         70,656
+      10 pBsOutBeamIDFlatUL      HEAP (00007f329b12a880 .. 00007f329b13bc7f}         70,656
+      11 gpNr5gBsPhyStats        HEAP (00007f328ca94f80 .. 00007f328d891a1f}     14,666,400
+      12 gpNr5gBsPhyStats        HEAP (00007f328d8d1cc0 .. 00007f328e6ce75f}     14,666,400
+      13 pBsOutBeamIDFlatUL      HEAP (00007f329b13bcc0 .. 00007f329b14d0bf}         70,656
+      14 pBsOutBeamIDFlatUL      HEAP (00007f329b14d100 .. 00007f329b15e4ff}         70,656
+      15 pBsOutBeamIDFlatUL      HEAP (00007f329b15e540 .. 00007f329b16f93f}         70,656
+      16 pBsOutBeamIDFlatUL      HEAP (00007f329b16f980 .. 00007f329b180d7f}         70,656
+      17 pBsOutBeamIDFlatUL      HEAP (00007f324bb28700 .. 00007f324bb39aff}         70,656
+      18 pBsOutBeamIDFlatUL      HEAP (00007f324bb39b80 .. 00007f324bb4af7f}         70,656
+      19 pBsOutBeamIDFlatUL      HEAP (00007f324bb4b000 .. 00007f324bb5c3ff}         70,656
+      20 pBsOutBeamIDFlatUL      HEAP (00007f324bb5c480 .. 00007f324bb6d87f}         70,656
+      21 gpNr5gBsPhyStats        HEAP (00007f323ca91780 .. 00007f323d88e21f}     14,666,400
+      22 gpNr5gBsPhyStats        HEAP (00007f323d88e280 .. 00007f323e68ad1f}     14,666,400
+      23 gpNr5gBsPhyStats        HEAP (00007f3214a91780 .. 00007f321588e21f}     14,666,400
+      24 gpNr5gBsPhyStats        HEAP (00007f321588e280 .. 00007f321668ad1f}     14,666,400
+ --------------------------------------------------------------------------------------------
+                HEAP Buffers Alloc:        23 /         Size Alloc:    253,930,880
+                DPDK Buffers Alloc:         0 /         Size Alloc:              0
+                XRAN Buffers Alloc:         1 /         Size Alloc:     19,657,256
+               TOTAL Buffers Alloc:        24 /         Size Alloc:    273,588,136
+ --------------------------------------------------------------------------------------------
+
+

@@ -1,0 +1,20 @@
+ - HeapInfo    
+
+ --------------------------------------------------------------------------------------------
+         String Name          MemType        Start               End           Size(Bytes)
+ --------------------------------------------------------------------------------------------
+       1 gpL1MemMgrCtx           HEAP (0000000018ee57c0 .. 0000000018f99e7f}        739,008
+       2 gpNr5GMac2PhyNonRea     HEAP (00007f3e958ca040 .. 00007f3ea8714827}    316,975,080
+       3 gpAuxOranIoIf           XRAN (00000002bd11aa40 .. 00000002bffd4467}     48,994,856
+       4 PolarQInfoTable         HEAP (00007f3e63b2f040 .. 00007f3e6894f03f}     81,920,000
+       5 PolarQInfoSortTable     HEAP (00007f3e5ed0e040 .. 00007f3e63b2e03f}     81,920,000
+       6 PolarQInterleaverTa     HEAP (0000000018fca540 .. 000000001901eb3f}        345,600
+       7 PolarIndexTable         HEAP (000000001901ebc0 .. 0000000019045cbf}        160,000
+ --------------------------------------------------------------------------------------------
+                HEAP Buffers Alloc:         6 /         Size Alloc:    482,059,688
+                DPDK Buffers Alloc:         0 /         Size Alloc:              0
+                XRAN Buffers Alloc:         1 /         Size Alloc:     48,994,856
+               TOTAL Buffers Alloc:         7 /         Size Alloc:    531,054,544
+ --------------------------------------------------------------------------------------------
+
+

@@ -1,0 +1,2180 @@
+------------------------------------------------------------------------------------------------------------
+SYSTEM_PARAMS:
+TSC_FREQ: 1496
+TEST_FILENAME:  icxsp_mu0_10mhz_4x4_hton.cfg
+FEC_OFFLOAD: MOUNT_BRYCE
+COMPILED WITH: clang 16.0.0 (icx 2023.0.0.20221201)
+COMPILE DATE: Feb 28 2023
+COMPILE TIME: 10:37:34
+Architecture:                    x86_64
+CPU op-mode(s):                  32-bit, 64-bit
+Address sizes:                   52 bits physical, 57 bits virtual
+Byte Order:                      Little Endian
+CPU(s):                          64
+On-line CPU(s) list:             0-63
+Vendor ID:                       GenuineIntel
+Model name:                      Intel(R) Xeon(R) Gold 6338N CPU @ 2.20GHz
+CPU family:                      6
+Model:                           106
+Thread(s) per core:              2
+Core(s) per socket:              32
+Socket(s):                       1
+Stepping:                        6
+Frequency boost:                 enabled
+CPU max MHz:                     1501.0000
+CPU min MHz:                     800.0000
+BogoMIPS:                        3000.00
+Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 invpcid_single ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local split_lock_detect wbnoinvd dtherm ida arat pln pts avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg tme avx512_vpopcntdq la57 rdpid fsrm md_clear pconfig flush_l1d arch_capabilities
+Virtualization:                  VT-x
+L1d cache:                       1.5 MiB (32 instances)
+L1i cache:                       1 MiB (32 instances)
+L2 cache:                        40 MiB (32 instances)
+L3 cache:                        48 MiB (1 instance)
+NUMA node(s):                    1
+NUMA node0 CPU(s):               0-63
+Vulnerability Itlb multihit:     Not affected
+Vulnerability L1tf:              Not affected
+Vulnerability Mds:               Not affected
+Vulnerability Meltdown:          Not affected
+Vulnerability Mmio stale data:   Mitigation; Clear CPU buffers; SMT vulnerable
+Vulnerability Retbleed:          Not affected
+Vulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:        Mitigation; Enhanced IBRS, IBPB conditional, RSB filling, PBRSB-eIBRS SW sequence
+Vulnerability Srbds:             Not affected
+Vulnerability Tsx async abort:   Not affected
+------------------------------------------------------------------------------------------------------------
+COMMAND_LINE:
+BOOT_IMAGE=/vmlinuz-5.19.0-35-generic root=/dev/mapper/ubuntu--vg-ubuntu--lv ro intel_iommu=on iommu=pt usbcore.autosuspend=-1 selinux=0 enforcing=0 nmi_watchdog=0 crashkernel=auto softlockup_panic=0 audit=0 cgroup_disable=memory tsc=nowatchdog intel_pstate=disable mce=off hugepagesz=1G hugepages=40 hugepagesz=2M hugepages=0 default_hugepagesz=1G nohz=on nosoftlockup nohz_full=1-27,57-83 rcu_nocbs=1-27,57-83 rcu_nocb_poll skew_tick=1 isolcpus=1-27,57-83 skew_tick=1 isolcpus=managed_irq,domain,1-31 nohz_full=1-31 rcu_nocbs=1-31 rcu_nocb_poll intel_pstate=disable nosoftlockup tsc=nowatchdog
+------------------------------------------------------------------------------------------------------------
+BIOS_INFO:
+microcode	: 0xd000389
+------------------------------------------------------------------------------------------------------------
+MEMORY_INFO:
+------------------------------------------------------------------------------------------------------------
+TURBOSTAT_INFO:
+------------------------------------------------------------------------------------------------------------
+All data in this sheet are presented in usecs
+Test: FD_16010 (Num Cells: 16) (Num TTI: 20006) (ttiDuration: 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000 usecs) (testStats: 1 20206 1)(numBbuCores: 8 [coremask: 0x000000f0000000f0 ]) (numSrsBbuCores: 0 [srscoremask: 0x0000000000000000 ]) (numDlbeamBbuCores: 0 [dlbeamcoremask: 0x0000000000000000 ]) (avgBbuCpuUtilization: 52) (avgSrsBbuCpuUtilization: 0) (avgDlbeamBbuCpuUtilization: 0)
+Options1: (pdsch: 0) (pusch_ce: 0) (pusch_mmse: 0) (pusch_llr_rx: 0) (pucch: 0) (srs: 0) (ul_beam: 0) (dl_beam: 0)
+Options2: (fec_enc: 1) (fec_dec: 1) (fec_dec_iter: 12) (fec_term: 0) (sleep: 1) (pdsch_sym_split: 0) (dl_reset: 1)
+Options3: (ce_interp: 2) (pusch_inter: 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4)
+FrameWorkOptions: (num_queue: 4) (num_context: 1) (max_fetch_context: 1)
+Options4: (Cell_0: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_1: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_2: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_3: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_4: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_5: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_6: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_7: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_8: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_9: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_10: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_11: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_12: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_13: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_14: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_15: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+------------------------------------------------------------------------------------------------------------
+    Core Level Breakdown (Average across all Cells (non-URLLC)) MU (0)
+        TOTAL DL Logical Cores (Per Cell)                                 :	     0.09
+        TOTAL UL Logical Cores (Per Cell)                                 :	     0.16
+        TOTAL SRS Logical Cores (Per Cell)                                :	     0.00
+        TOTAL DL BeamForming Logical Cores (Per Cell)                     :	     0.00
+        TOTAL UL BeamForming Logical Cores (Per Cell)                     :	     0.00
+------------------------------------------------------------------------------------------------------------
+    High Level Breakdown (Average across all Cells (non-URLLC)) MU (0)
+       DL CONTROL                                                         :	     0.00
+       PDSCH                                                              :	    57.90
+       PDSCH FEC                                                          :	     9.75
+       PUSCH FEC                                                          :	    11.55
+       PUSCH                                                              :	    55.52
+       PUCCH                                                              :	    65.33
+       PRACH                                                              :	     0.00
+       SRS                                                                :	     0.00
+       DL BEAM                                                            :	     0.00
+       UL BEAM                                                            :	     0.00
+       MAC-PHY API                                                        :	    34.73
+       OTHERS                                                             :	     6.20
+------------------------------------------------------------------------------------------------------------
+    Low Level Function Breakdown (Average across all Cells (non-URLLC)) MU (0)
+        100 : GNB_DL_CFG                                                  :	    11.44
+        140N: GNB_UL_CFG                                                  :	    23.29
+        180N: GNB_PDSCH_TB_CRC                                            :	     4.26
+        220 : GNB_PDSCH_CB_SETUP                                          :	     3.54
+        260 : GNB_PDSCH_TB_QUEUE                                          :	     1.95
+        300N: GNB_PDSCH_SCRAMBLER                                         :	     5.33
+        340 : GNB_PDSCH_RS                                                :	    19.56
+        380 : GNB_DL_SYMBOL_PROC                                          :	    33.01
+        420 : GNB_DL_PDSCH_BEAM_FORMING                                   :	     0.00
+        460N: GNB_DL_CSI_PROC                                             :	     0.00
+        500 : GNB_DL_DCI_PROC                                             :	     0.00
+        540 : GNB_DL_UCI_PROC                                             :	     0.00
+        580 : GNB_DL_DCI_PRECODER                                         :	     0.00
+        620 : GNB_DL_PBCH_PROC                                            :	     0.00
+        660N: GNB_DL_RESET_BUF                                            :	     1.14
+        700 : GNB_DL_POST                                                 :	     0.07
+        740N: GNB_PUSCH_DMRS                                              :	     5.55
+        780 : GNB_PUSCH_CE_SYMB0                                          :	     1.63
+        820 : GNB_PUSCH_CE_SYMB7                                          :	    18.52
+        860 : GNB_PUSCH_RNN_CALC                                          :	     0.00
+        900 : GNB_PUSCH_MMSE_SYMB0                                        :	     0.19
+        940 : GNB_PUSCH_MMSE_SYMB7                                        :	    25.27
+        980 : GNB_PUSCH_DESCRAMBLE                                        :	     2.79
+       1060N: GNB_PUSCH_CB_SETUP                                          :	     2.32
+       1020 : GNB_PUSCH_DECODER                                           :	     2.38
+       1100 : GNB_PUSCH_TB                                                :	     6.85
+       1140N: GNB_PUSCH_UCI_DECODER                                       :	     1.57
+       1180N: GNB_PUCCH_RX                                                :	    65.33
+       1220N: GNB_PRACH_PROCESS                                           :	     0.00
+       1260N: GNB_SRS_RX                                                  :	     0.00
+       1300 : GNB_SRS_CE                                                  :	     0.00
+       1340 : GNB_SRS_FFT_CB_SETUP                                        :	     0.00
+       1380 : GNB_SRS_FFT_RUN_FUNC                                        :	     0.00
+       1420 : GNB_SRS_CE_POST                                             :	     0.00
+       1460 : GNB_SRS_REPORT                                              :	     0.00
+       1500N: GNB_UL_POST                                                 :	     4.98
+       1540N: GNB_DL_BEAM_WEIGHT_TASK                                     :	     0.00
+       1580N: GNB_UL_BEAM_WEIGHT_TASK                                     :	     0.00
+       1620N: GNB_UL_PUCCH_BEAM_WEIGHT_TASK                               :	     0.00
+       1660N: GNB_DL_ORAN                                                 :	     0.00
+       1700 : GNB_DL_IQ_COMPRESS                                          :	     0.00
+       1740N: GNB_UL_IQ_DECOMPRESS                                        :	     0.00
+       1780N: GNB_DL_BEAM_WEIGHT_COMPRESS                                 :	     0.00
+       1820N: GNB_UL_BEAM_WEIGHT_COMPRESS                                 :	     0.00
+       1860N: GNB_UL_SRS_IQ_DECOMPRESS                                    :	     0.00
+       1900N: GNB_DL_OFDM_CTRL_COMPRESS                                   :	     0.00
+       1940 : GNB_DL_OFDM_RS_COMPRESS                                     :	     0.00
+       1980 : GNB_DL_OFDM_DATA_COMPRESS                                   :	     0.00
+       2020N: GNB_UL_IQ_DECOMP_PUSCH                                      :	     0.00
+       2060N: GNB_UL_IQ_DECOMP_PUCCH                                      :	     0.00
+------------------------------------------------------------------------------------------------------------
+    Low Level Function Breakdown (Per Cell (non-URLLC))
+        100 : CC00_GNB_DL_CFG                                             :	    12.76
+        101 : CC01_GNB_DL_CFG                                             :	    12.88
+        102 : CC02_GNB_DL_CFG                                             :	    11.89
+        103 : CC03_GNB_DL_CFG                                             :	    12.86
+        104 : CC04_GNB_DL_CFG                                             :	    10.65
+        105 : CC05_GNB_DL_CFG                                             :	    11.99
+        106 : CC06_GNB_DL_CFG                                             :	    11.78
+        107 : CC07_GNB_DL_CFG                                             :	    11.01
+        108 : CC08_GNB_DL_CFG                                             :	    11.44
+        109 : CC09_GNB_DL_CFG                                             :	    11.06
+        110 : CC10_GNB_DL_CFG                                             :	    11.23
+        111 : CC11_GNB_DL_CFG                                             :	    10.43
+        112 : CC12_GNB_DL_CFG                                             :	    10.87
+        113 : CC13_GNB_DL_CFG                                             :	    11.00
+        114 : CC14_GNB_DL_CFG                                             :	    10.89
+        115 : CC15_GNB_DL_CFG                                             :	    10.23
+        140N: CC00_GNB_UL_CFG                                             :	    26.63
+        141 : CC01_GNB_UL_CFG                                             :	    26.28
+        142 : CC02_GNB_UL_CFG                                             :	    25.81
+        143 : CC03_GNB_UL_CFG                                             :	    26.86
+        144 : CC04_GNB_UL_CFG                                             :	    24.13
+        145 : CC05_GNB_UL_CFG                                             :	    24.21
+        146 : CC06_GNB_UL_CFG                                             :	    23.39
+        147 : CC07_GNB_UL_CFG                                             :	    23.76
+        148 : CC08_GNB_UL_CFG                                             :	    22.38
+        149 : CC09_GNB_UL_CFG                                             :	    22.17
+        150 : CC10_GNB_UL_CFG                                             :	    21.52
+        151 : CC11_GNB_UL_CFG                                             :	    21.20
+        152 : CC12_GNB_UL_CFG                                             :	    21.96
+        153 : CC13_GNB_UL_CFG                                             :	    21.58
+        154 : CC14_GNB_UL_CFG                                             :	    20.82
+        155 : CC15_GNB_UL_CFG                                             :	    20.00
+        180N: CC00_GNB_PDSCH_TB_CRC                                       :	     4.00
+        181 : CC01_GNB_PDSCH_TB_CRC                                       :	     4.07
+        182 : CC02_GNB_PDSCH_TB_CRC                                       :	     4.52
+        183 : CC03_GNB_PDSCH_TB_CRC                                       :	     4.17
+        184 : CC04_GNB_PDSCH_TB_CRC                                       :	     4.09
+        185 : CC05_GNB_PDSCH_TB_CRC                                       :	     4.24
+        186 : CC06_GNB_PDSCH_TB_CRC                                       :	     4.25
+        187 : CC07_GNB_PDSCH_TB_CRC                                       :	     4.17
+        188 : CC08_GNB_PDSCH_TB_CRC                                       :	     4.26
+        189 : CC09_GNB_PDSCH_TB_CRC                                       :	     4.40
+        190 : CC10_GNB_PDSCH_TB_CRC                                       :	     4.38
+        191 : CC11_GNB_PDSCH_TB_CRC                                       :	     4.32
+        192 : CC12_GNB_PDSCH_TB_CRC                                       :	     4.43
+        193 : CC13_GNB_PDSCH_TB_CRC                                       :	     4.63
+        194 : CC14_GNB_PDSCH_TB_CRC                                       :	     4.33
+        195 : CC15_GNB_PDSCH_TB_CRC                                       :	     3.94
+        220N: CC00_GNB_PDSCH_CB_SETUP                                     :	     3.50
+        221 : CC01_GNB_PDSCH_CB_SETUP                                     :	     3.86
+        222 : CC02_GNB_PDSCH_CB_SETUP                                     :	     3.43
+        223 : CC03_GNB_PDSCH_CB_SETUP                                     :	     3.54
+        224 : CC04_GNB_PDSCH_CB_SETUP                                     :	     3.62
+        225 : CC05_GNB_PDSCH_CB_SETUP                                     :	     3.59
+        226 : CC06_GNB_PDSCH_CB_SETUP                                     :	     3.49
+        227 : CC07_GNB_PDSCH_CB_SETUP                                     :	     3.93
+        228 : CC08_GNB_PDSCH_CB_SETUP                                     :	     3.42
+        229 : CC09_GNB_PDSCH_CB_SETUP                                     :	     3.41
+        230 : CC10_GNB_PDSCH_CB_SETUP                                     :	     3.42
+        231 : CC11_GNB_PDSCH_CB_SETUP                                     :	     3.53
+        232 : CC12_GNB_PDSCH_CB_SETUP                                     :	     3.48
+        233 : CC13_GNB_PDSCH_CB_SETUP                                     :	     3.44
+        234 : CC14_GNB_PDSCH_CB_SETUP                                     :	     3.43
+        235 : CC15_GNB_PDSCH_CB_SETUP                                     :	     3.52
+        260N: CC00_GNB_PDSCH_TB_QUEUE                                     :	     2.12
+        261 : CC01_GNB_PDSCH_TB_QUEUE                                     :	     2.12
+        262 : CC02_GNB_PDSCH_TB_QUEUE                                     :	     2.01
+        263 : CC03_GNB_PDSCH_TB_QUEUE                                     :	     2.06
+        264 : CC04_GNB_PDSCH_TB_QUEUE                                     :	     1.93
+        265 : CC05_GNB_PDSCH_TB_QUEUE                                     :	     1.96
+        266 : CC06_GNB_PDSCH_TB_QUEUE                                     :	     1.95
+        267 : CC07_GNB_PDSCH_TB_QUEUE                                     :	     1.93
+        268 : CC08_GNB_PDSCH_TB_QUEUE                                     :	     1.86
+        269 : CC09_GNB_PDSCH_TB_QUEUE                                     :	     1.90
+        270 : CC10_GNB_PDSCH_TB_QUEUE                                     :	     1.92
+        271 : CC11_GNB_PDSCH_TB_QUEUE                                     :	     1.90
+        272 : CC12_GNB_PDSCH_TB_QUEUE                                     :	     1.88
+        273 : CC13_GNB_PDSCH_TB_QUEUE                                     :	     1.88
+        274 : CC14_GNB_PDSCH_TB_QUEUE                                     :	     1.90
+        275 : CC15_GNB_PDSCH_TB_QUEUE                                     :	     1.85
+        300N: CC00_GNB_PDSCH_SCRAMBLER                                    :	     5.30
+        301 : CC01_GNB_PDSCH_SCRAMBLER                                    :	     5.32
+        302 : CC02_GNB_PDSCH_SCRAMBLER                                    :	     5.39
+        303 : CC03_GNB_PDSCH_SCRAMBLER                                    :	     5.45
+        304 : CC04_GNB_PDSCH_SCRAMBLER                                    :	     5.39
+        305 : CC05_GNB_PDSCH_SCRAMBLER                                    :	     5.50
+        306 : CC06_GNB_PDSCH_SCRAMBLER                                    :	     5.39
+        307 : CC07_GNB_PDSCH_SCRAMBLER                                    :	     5.40
+        308 : CC08_GNB_PDSCH_SCRAMBLER                                    :	     5.20
+        309 : CC09_GNB_PDSCH_SCRAMBLER                                    :	     5.23
+        310 : CC10_GNB_PDSCH_SCRAMBLER                                    :	     5.30
+        311 : CC11_GNB_PDSCH_SCRAMBLER                                    :	     5.31
+        312 : CC12_GNB_PDSCH_SCRAMBLER                                    :	     5.30
+        313 : CC13_GNB_PDSCH_SCRAMBLER                                    :	     5.33
+        314 : CC14_GNB_PDSCH_SCRAMBLER                                    :	     5.27
+        315 : CC15_GNB_PDSCH_SCRAMBLER                                    :	     5.16
+        340N: CC00_GNB_PDSCH_RS                                           :	    20.54
+        341 : CC01_GNB_PDSCH_RS                                           :	    20.50
+        342 : CC02_GNB_PDSCH_RS                                           :	    20.44
+        343 : CC03_GNB_PDSCH_RS                                           :	    20.29
+        344 : CC04_GNB_PDSCH_RS                                           :	    20.05
+        345 : CC05_GNB_PDSCH_RS                                           :	    19.85
+        346 : CC06_GNB_PDSCH_RS                                           :	    19.65
+        347 : CC07_GNB_PDSCH_RS                                           :	    19.26
+        348 : CC08_GNB_PDSCH_RS                                           :	    18.94
+        349 : CC09_GNB_PDSCH_RS                                           :	    19.06
+        350 : CC10_GNB_PDSCH_RS                                           :	    18.99
+        351 : CC11_GNB_PDSCH_RS                                           :	    19.04
+        352 : CC12_GNB_PDSCH_RS                                           :	    19.19
+        353 : CC13_GNB_PDSCH_RS                                           :	    19.14
+        354 : CC14_GNB_PDSCH_RS                                           :	    19.09
+        355 : CC15_GNB_PDSCH_RS                                           :	    19.00
+        380N: CC00_GNB_DL_SYMBOL_PROC                                     :	    33.42
+        381 : CC01_GNB_DL_SYMBOL_PROC                                     :	    33.32
+        382 : CC02_GNB_DL_SYMBOL_PROC                                     :	    33.47
+        383 : CC03_GNB_DL_SYMBOL_PROC                                     :	    33.65
+        384 : CC04_GNB_DL_SYMBOL_PROC                                     :	    33.39
+        385 : CC05_GNB_DL_SYMBOL_PROC                                     :	    33.30
+        386 : CC06_GNB_DL_SYMBOL_PROC                                     :	    33.01
+        387 : CC07_GNB_DL_SYMBOL_PROC                                     :	    32.68
+        388 : CC08_GNB_DL_SYMBOL_PROC                                     :	    32.79
+        389 : CC09_GNB_DL_SYMBOL_PROC                                     :	    33.01
+        390 : CC10_GNB_DL_SYMBOL_PROC                                     :	    33.07
+        391 : CC11_GNB_DL_SYMBOL_PROC                                     :	    33.08
+        392 : CC12_GNB_DL_SYMBOL_PROC                                     :	    32.99
+        393 : CC13_GNB_DL_SYMBOL_PROC                                     :	    32.82
+        394 : CC14_GNB_DL_SYMBOL_PROC                                     :	    32.53
+        395 : CC15_GNB_DL_SYMBOL_PROC                                     :	    31.57
+        420N: CC00_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        421 : CC01_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        422 : CC02_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        423 : CC03_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        424 : CC04_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        425 : CC05_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        426 : CC06_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        427 : CC07_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        428 : CC08_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        429 : CC09_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        430 : CC10_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        431 : CC11_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        432 : CC12_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        433 : CC13_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        434 : CC14_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        435 : CC15_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        460N: CC00_GNB_DL_CSI_PROC                                        :	     0.00
+        461 : CC01_GNB_DL_CSI_PROC                                        :	     0.00
+        462 : CC02_GNB_DL_CSI_PROC                                        :	     0.00
+        463 : CC03_GNB_DL_CSI_PROC                                        :	     0.00
+        464 : CC04_GNB_DL_CSI_PROC                                        :	     0.00
+        465 : CC05_GNB_DL_CSI_PROC                                        :	     0.00
+        466 : CC06_GNB_DL_CSI_PROC                                        :	     0.00
+        467 : CC07_GNB_DL_CSI_PROC                                        :	     0.00
+        468 : CC08_GNB_DL_CSI_PROC                                        :	     0.00
+        469 : CC09_GNB_DL_CSI_PROC                                        :	     0.00
+        470 : CC10_GNB_DL_CSI_PROC                                        :	     0.00
+        471 : CC11_GNB_DL_CSI_PROC                                        :	     0.00
+        472 : CC12_GNB_DL_CSI_PROC                                        :	     0.00
+        473 : CC13_GNB_DL_CSI_PROC                                        :	     0.00
+        474 : CC14_GNB_DL_CSI_PROC                                        :	     0.00
+        475 : CC15_GNB_DL_CSI_PROC                                        :	     0.00
+        500N: CC00_GNB_DL_DCI_PROC                                        :	     0.00
+        501 : CC01_GNB_DL_DCI_PROC                                        :	     0.00
+        502 : CC02_GNB_DL_DCI_PROC                                        :	     0.00
+        503 : CC03_GNB_DL_DCI_PROC                                        :	     0.00
+        504 : CC04_GNB_DL_DCI_PROC                                        :	     0.00
+        505 : CC05_GNB_DL_DCI_PROC                                        :	     0.00
+        506 : CC06_GNB_DL_DCI_PROC                                        :	     0.00
+        507 : CC07_GNB_DL_DCI_PROC                                        :	     0.00
+        508 : CC08_GNB_DL_DCI_PROC                                        :	     0.00
+        509 : CC09_GNB_DL_DCI_PROC                                        :	     0.00
+        510 : CC10_GNB_DL_DCI_PROC                                        :	     0.00
+        511 : CC11_GNB_DL_DCI_PROC                                        :	     0.00
+        512 : CC12_GNB_DL_DCI_PROC                                        :	     0.00
+        513 : CC13_GNB_DL_DCI_PROC                                        :	     0.00
+        514 : CC14_GNB_DL_DCI_PROC                                        :	     0.00
+        515 : CC15_GNB_DL_DCI_PROC                                        :	     0.00
+        540N: CC00_GNB_DL_UCI_PROC                                        :	     0.00
+        541 : CC01_GNB_DL_UCI_PROC                                        :	     0.00
+        542 : CC02_GNB_DL_UCI_PROC                                        :	     0.00
+        543 : CC03_GNB_DL_UCI_PROC                                        :	     0.00
+        544 : CC04_GNB_DL_UCI_PROC                                        :	     0.00
+        545 : CC05_GNB_DL_UCI_PROC                                        :	     0.00
+        546 : CC06_GNB_DL_UCI_PROC                                        :	     0.00
+        547 : CC07_GNB_DL_UCI_PROC                                        :	     0.00
+        548 : CC08_GNB_DL_UCI_PROC                                        :	     0.00
+        549 : CC09_GNB_DL_UCI_PROC                                        :	     0.00
+        550 : CC10_GNB_DL_UCI_PROC                                        :	     0.00
+        551 : CC11_GNB_DL_UCI_PROC                                        :	     0.00
+        552 : CC12_GNB_DL_UCI_PROC                                        :	     0.00
+        553 : CC13_GNB_DL_UCI_PROC                                        :	     0.00
+        554 : CC14_GNB_DL_UCI_PROC                                        :	     0.00
+        555 : CC15_GNB_DL_UCI_PROC                                        :	     0.00
+        580N: CC00_GNB_DL_DCI_PRECODER                                    :	     0.00
+        581 : CC01_GNB_DL_DCI_PRECODER                                    :	     0.00
+        582 : CC02_GNB_DL_DCI_PRECODER                                    :	     0.00
+        583 : CC03_GNB_DL_DCI_PRECODER                                    :	     0.00
+        584 : CC04_GNB_DL_DCI_PRECODER                                    :	     0.00
+        585 : CC05_GNB_DL_DCI_PRECODER                                    :	     0.00
+        586 : CC06_GNB_DL_DCI_PRECODER                                    :	     0.00
+        587 : CC07_GNB_DL_DCI_PRECODER                                    :	     0.00
+        588 : CC08_GNB_DL_DCI_PRECODER                                    :	     0.00
+        589 : CC09_GNB_DL_DCI_PRECODER                                    :	     0.00
+        590 : CC10_GNB_DL_DCI_PRECODER                                    :	     0.00
+        591 : CC11_GNB_DL_DCI_PRECODER                                    :	     0.00
+        592 : CC12_GNB_DL_DCI_PRECODER                                    :	     0.00
+        593 : CC13_GNB_DL_DCI_PRECODER                                    :	     0.00
+        594 : CC14_GNB_DL_DCI_PRECODER                                    :	     0.00
+        595 : CC15_GNB_DL_DCI_PRECODER                                    :	     0.00
+        620N: CC00_GNB_DL_PBCH_PROC                                       :	     0.00
+        621 : CC01_GNB_DL_PBCH_PROC                                       :	     0.00
+        622 : CC02_GNB_DL_PBCH_PROC                                       :	     0.00
+        623 : CC03_GNB_DL_PBCH_PROC                                       :	     0.00
+        624 : CC04_GNB_DL_PBCH_PROC                                       :	     0.00
+        625 : CC05_GNB_DL_PBCH_PROC                                       :	     0.00
+        626 : CC06_GNB_DL_PBCH_PROC                                       :	     0.00
+        627 : CC07_GNB_DL_PBCH_PROC                                       :	     0.00
+        628 : CC08_GNB_DL_PBCH_PROC                                       :	     0.00
+        629 : CC09_GNB_DL_PBCH_PROC                                       :	     0.00
+        630 : CC10_GNB_DL_PBCH_PROC                                       :	     0.00
+        631 : CC11_GNB_DL_PBCH_PROC                                       :	     0.00
+        632 : CC12_GNB_DL_PBCH_PROC                                       :	     0.00
+        633 : CC13_GNB_DL_PBCH_PROC                                       :	     0.00
+        634 : CC14_GNB_DL_PBCH_PROC                                       :	     0.00
+        635 : CC15_GNB_DL_PBCH_PROC                                       :	     0.00
+        660N: CC00_GNB_DL_RESET_BUF                                       :	     1.17
+        661 : CC01_GNB_DL_RESET_BUF                                       :	     1.15
+        662 : CC02_GNB_DL_RESET_BUF                                       :	     1.13
+        663 : CC03_GNB_DL_RESET_BUF                                       :	     1.18
+        664 : CC04_GNB_DL_RESET_BUF                                       :	     1.14
+        665 : CC05_GNB_DL_RESET_BUF                                       :	     1.17
+        666 : CC06_GNB_DL_RESET_BUF                                       :	     1.11
+        667 : CC07_GNB_DL_RESET_BUF                                       :	     1.14
+        668 : CC08_GNB_DL_RESET_BUF                                       :	     1.12
+        669 : CC09_GNB_DL_RESET_BUF                                       :	     1.08
+        670 : CC10_GNB_DL_RESET_BUF                                       :	     1.09
+        671 : CC11_GNB_DL_RESET_BUF                                       :	     1.10
+        672 : CC12_GNB_DL_RESET_BUF                                       :	     1.18
+        673 : CC13_GNB_DL_RESET_BUF                                       :	     1.15
+        674 : CC14_GNB_DL_RESET_BUF                                       :	     1.14
+        675 : CC15_GNB_DL_RESET_BUF                                       :	     1.15
+        700N: CC00_GNB_DL_POST                                            :	     0.09
+        701 : CC01_GNB_DL_POST                                            :	     0.08
+        702 : CC02_GNB_DL_POST                                            :	     0.08
+        703 : CC03_GNB_DL_POST                                            :	     0.08
+        704 : CC04_GNB_DL_POST                                            :	     0.07
+        705 : CC05_GNB_DL_POST                                            :	     0.08
+        706 : CC06_GNB_DL_POST                                            :	     0.08
+        707 : CC07_GNB_DL_POST                                            :	     0.07
+        708 : CC08_GNB_DL_POST                                            :	     0.07
+        709 : CC09_GNB_DL_POST                                            :	     0.07
+        710 : CC10_GNB_DL_POST                                            :	     0.07
+        711 : CC11_GNB_DL_POST                                            :	     0.07
+        712 : CC12_GNB_DL_POST                                            :	     0.07
+        713 : CC13_GNB_DL_POST                                            :	     0.07
+        714 : CC14_GNB_DL_POST                                            :	     0.08
+        715 : CC15_GNB_DL_POST                                            :	     0.08
+        740N: CC00_GNB_PUSCH_DMRS                                         :	     5.74
+        741 : CC01_GNB_PUSCH_DMRS                                         :	     5.79
+        742 : CC02_GNB_PUSCH_DMRS                                         :	     5.72
+        743 : CC03_GNB_PUSCH_DMRS                                         :	     5.71
+        744 : CC04_GNB_PUSCH_DMRS                                         :	     5.66
+        745 : CC05_GNB_PUSCH_DMRS                                         :	     5.61
+        746 : CC06_GNB_PUSCH_DMRS                                         :	     5.55
+        747 : CC07_GNB_PUSCH_DMRS                                         :	     5.36
+        748 : CC08_GNB_PUSCH_DMRS                                         :	     5.41
+        749 : CC09_GNB_PUSCH_DMRS                                         :	     5.40
+        750 : CC10_GNB_PUSCH_DMRS                                         :	     5.39
+        751 : CC11_GNB_PUSCH_DMRS                                         :	     5.44
+        752 : CC12_GNB_PUSCH_DMRS                                         :	     5.45
+        753 : CC13_GNB_PUSCH_DMRS                                         :	     5.46
+        754 : CC14_GNB_PUSCH_DMRS                                         :	     5.46
+        755 : CC15_GNB_PUSCH_DMRS                                         :	     5.57
+        780N: CC00_GNB_PUSCH_CE_SYMB0                                     :	     1.66
+        781 : CC01_GNB_PUSCH_CE_SYMB0                                     :	     1.75
+        782 : CC02_GNB_PUSCH_CE_SYMB0                                     :	     1.67
+        783 : CC03_GNB_PUSCH_CE_SYMB0                                     :	     1.59
+        784 : CC04_GNB_PUSCH_CE_SYMB0                                     :	     1.62
+        785 : CC05_GNB_PUSCH_CE_SYMB0                                     :	     1.62
+        786 : CC06_GNB_PUSCH_CE_SYMB0                                     :	     1.59
+        787 : CC07_GNB_PUSCH_CE_SYMB0                                     :	     1.62
+        788 : CC08_GNB_PUSCH_CE_SYMB0                                     :	     1.63
+        789 : CC09_GNB_PUSCH_CE_SYMB0                                     :	     1.62
+        790 : CC10_GNB_PUSCH_CE_SYMB0                                     :	     1.63
+        791 : CC11_GNB_PUSCH_CE_SYMB0                                     :	     1.60
+        792 : CC12_GNB_PUSCH_CE_SYMB0                                     :	     1.59
+        793 : CC13_GNB_PUSCH_CE_SYMB0                                     :	     1.59
+        794 : CC14_GNB_PUSCH_CE_SYMB0                                     :	     1.60
+        795 : CC15_GNB_PUSCH_CE_SYMB0                                     :	     1.75
+        820N: CC00_GNB_PUSCH_CE_SYMB7                                     :	    20.17
+        821 : CC01_GNB_PUSCH_CE_SYMB7                                     :	    19.55
+        822 : CC02_GNB_PUSCH_CE_SYMB7                                     :	    19.81
+        823 : CC03_GNB_PUSCH_CE_SYMB7                                     :	    19.71
+        824 : CC04_GNB_PUSCH_CE_SYMB7                                     :	    19.38
+        825 : CC05_GNB_PUSCH_CE_SYMB7                                     :	    19.13
+        826 : CC06_GNB_PUSCH_CE_SYMB7                                     :	    19.19
+        827 : CC07_GNB_PUSCH_CE_SYMB7                                     :	    18.20
+        828 : CC08_GNB_PUSCH_CE_SYMB7                                     :	    17.30
+        829 : CC09_GNB_PUSCH_CE_SYMB7                                     :	    17.72
+        830 : CC10_GNB_PUSCH_CE_SYMB7                                     :	    17.74
+        831 : CC11_GNB_PUSCH_CE_SYMB7                                     :	    17.65
+        832 : CC12_GNB_PUSCH_CE_SYMB7                                     :	    17.91
+        833 : CC13_GNB_PUSCH_CE_SYMB7                                     :	    17.61
+        834 : CC14_GNB_PUSCH_CE_SYMB7                                     :	    17.66
+        835 : CC15_GNB_PUSCH_CE_SYMB7                                     :	    17.58
+        860N: CC00_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        861 : CC01_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        862 : CC02_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        863 : CC03_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        864 : CC04_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        865 : CC05_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        866 : CC06_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        867 : CC07_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        868 : CC08_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        869 : CC09_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        870 : CC10_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        871 : CC11_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        872 : CC12_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        873 : CC13_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        874 : CC14_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        875 : CC15_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        900N: CC00_GNB_PUSCH_MMSE_SYMB0                                   :	     0.14
+        901 : CC01_GNB_PUSCH_MMSE_SYMB0                                   :	     0.18
+        902 : CC02_GNB_PUSCH_MMSE_SYMB0                                   :	     0.19
+        903 : CC03_GNB_PUSCH_MMSE_SYMB0                                   :	     0.19
+        904 : CC04_GNB_PUSCH_MMSE_SYMB0                                   :	     0.20
+        905 : CC05_GNB_PUSCH_MMSE_SYMB0                                   :	     0.19
+        906 : CC06_GNB_PUSCH_MMSE_SYMB0                                   :	     0.20
+        907 : CC07_GNB_PUSCH_MMSE_SYMB0                                   :	     0.20
+        908 : CC08_GNB_PUSCH_MMSE_SYMB0                                   :	     0.19
+        909 : CC09_GNB_PUSCH_MMSE_SYMB0                                   :	     0.19
+        910 : CC10_GNB_PUSCH_MMSE_SYMB0                                   :	     0.19
+        911 : CC11_GNB_PUSCH_MMSE_SYMB0                                   :	     0.19
+        912 : CC12_GNB_PUSCH_MMSE_SYMB0                                   :	     0.19
+        913 : CC13_GNB_PUSCH_MMSE_SYMB0                                   :	     0.19
+        914 : CC14_GNB_PUSCH_MMSE_SYMB0                                   :	     0.18
+        915 : CC15_GNB_PUSCH_MMSE_SYMB0                                   :	     0.17
+        940N: CC00_GNB_PUSCH_MMSE_SYMB7                                   :	    25.71
+        941 : CC01_GNB_PUSCH_MMSE_SYMB7                                   :	    25.57
+        942 : CC02_GNB_PUSCH_MMSE_SYMB7                                   :	    25.64
+        943 : CC03_GNB_PUSCH_MMSE_SYMB7                                   :	    25.64
+        944 : CC04_GNB_PUSCH_MMSE_SYMB7                                   :	    25.51
+        945 : CC05_GNB_PUSCH_MMSE_SYMB7                                   :	    25.53
+        946 : CC06_GNB_PUSCH_MMSE_SYMB7                                   :	    25.61
+        947 : CC07_GNB_PUSCH_MMSE_SYMB7                                   :	    25.29
+        948 : CC08_GNB_PUSCH_MMSE_SYMB7                                   :	    24.88
+        949 : CC09_GNB_PUSCH_MMSE_SYMB7                                   :	    24.99
+        950 : CC10_GNB_PUSCH_MMSE_SYMB7                                   :	    24.99
+        951 : CC11_GNB_PUSCH_MMSE_SYMB7                                   :	    24.93
+        952 : CC12_GNB_PUSCH_MMSE_SYMB7                                   :	    25.04
+        953 : CC13_GNB_PUSCH_MMSE_SYMB7                                   :	    24.98
+        954 : CC14_GNB_PUSCH_MMSE_SYMB7                                   :	    24.98
+        955 : CC15_GNB_PUSCH_MMSE_SYMB7                                   :	    25.07
+        980N: CC00_GNB_PUSCH_DESCRAMBLE                                   :	     2.81
+        981 : CC01_GNB_PUSCH_DESCRAMBLE                                   :	     2.88
+        982 : CC02_GNB_PUSCH_DESCRAMBLE                                   :	     2.89
+        983 : CC03_GNB_PUSCH_DESCRAMBLE                                   :	     2.90
+        984 : CC04_GNB_PUSCH_DESCRAMBLE                                   :	     2.89
+        985 : CC05_GNB_PUSCH_DESCRAMBLE                                   :	     2.91
+        986 : CC06_GNB_PUSCH_DESCRAMBLE                                   :	     2.85
+        987 : CC07_GNB_PUSCH_DESCRAMBLE                                   :	     2.61
+        988 : CC08_GNB_PUSCH_DESCRAMBLE                                   :	     2.73
+        989 : CC09_GNB_PUSCH_DESCRAMBLE                                   :	     2.74
+        990 : CC10_GNB_PUSCH_DESCRAMBLE                                   :	     2.76
+        991 : CC11_GNB_PUSCH_DESCRAMBLE                                   :	     2.78
+        992 : CC12_GNB_PUSCH_DESCRAMBLE                                   :	     2.77
+        993 : CC13_GNB_PUSCH_DESCRAMBLE                                   :	     2.79
+        994 : CC14_GNB_PUSCH_DESCRAMBLE                                   :	     2.75
+        995 : CC15_GNB_PUSCH_DESCRAMBLE                                   :	     2.61
+       1060N: CC00_GNB_PUSCH_CB_SETUP                                     :	     2.38
+       1061 : CC01_GNB_PUSCH_CB_SETUP                                     :	     2.40
+       1062 : CC02_GNB_PUSCH_CB_SETUP                                     :	     2.50
+       1063 : CC03_GNB_PUSCH_CB_SETUP                                     :	     2.47
+       1064 : CC04_GNB_PUSCH_CB_SETUP                                     :	     2.47
+       1065 : CC05_GNB_PUSCH_CB_SETUP                                     :	     2.47
+       1066 : CC06_GNB_PUSCH_CB_SETUP                                     :	     2.45
+       1067 : CC07_GNB_PUSCH_CB_SETUP                                     :	     2.33
+       1068 : CC08_GNB_PUSCH_CB_SETUP                                     :	     2.13
+       1069 : CC09_GNB_PUSCH_CB_SETUP                                     :	     2.07
+       1070 : CC10_GNB_PUSCH_CB_SETUP                                     :	     2.25
+       1071 : CC11_GNB_PUSCH_CB_SETUP                                     :	     2.27
+       1072 : CC12_GNB_PUSCH_CB_SETUP                                     :	     2.26
+       1073 : CC13_GNB_PUSCH_CB_SETUP                                     :	     2.30
+       1074 : CC14_GNB_PUSCH_CB_SETUP                                     :	     2.26
+       1075 : CC15_GNB_PUSCH_CB_SETUP                                     :	     2.17
+       1020N: CC00_GNB_PUSCH_DECODER                                      :	     2.72
+       1021 : CC01_GNB_PUSCH_DECODER                                      :	     2.76
+       1022 : CC02_GNB_PUSCH_DECODER                                      :	     2.72
+       1023 : CC03_GNB_PUSCH_DECODER                                      :	     2.73
+       1024 : CC04_GNB_PUSCH_DECODER                                      :	     2.72
+       1025 : CC05_GNB_PUSCH_DECODER                                      :	     2.73
+       1026 : CC06_GNB_PUSCH_DECODER                                      :	     2.73
+       1027 : CC07_GNB_PUSCH_DECODER                                      :	     2.51
+       1028 : CC08_GNB_PUSCH_DECODER                                      :	     2.04
+       1029 : CC09_GNB_PUSCH_DECODER                                      :	     1.97
+       1030 : CC10_GNB_PUSCH_DECODER                                      :	     2.06
+       1031 : CC11_GNB_PUSCH_DECODER                                      :	     2.05
+       1032 : CC12_GNB_PUSCH_DECODER                                      :	     2.03
+       1033 : CC13_GNB_PUSCH_DECODER                                      :	     2.09
+       1034 : CC14_GNB_PUSCH_DECODER                                      :	     2.12
+       1035 : CC15_GNB_PUSCH_DECODER                                      :	     2.02
+       1100N: CC00_GNB_PUSCH_TB                                           :	     6.78
+       1101 : CC01_GNB_PUSCH_TB                                           :	     6.98
+       1102 : CC02_GNB_PUSCH_TB                                           :	     7.09
+       1103 : CC03_GNB_PUSCH_TB                                           :	     7.18
+       1104 : CC04_GNB_PUSCH_TB                                           :	     7.09
+       1105 : CC05_GNB_PUSCH_TB                                           :	     7.11
+       1106 : CC06_GNB_PUSCH_TB                                           :	     6.90
+       1107 : CC07_GNB_PUSCH_TB                                           :	     6.76
+       1108 : CC08_GNB_PUSCH_TB                                           :	     6.86
+       1109 : CC09_GNB_PUSCH_TB                                           :	     6.92
+       1110 : CC10_GNB_PUSCH_TB                                           :	     6.84
+       1111 : CC11_GNB_PUSCH_TB                                           :	     6.85
+       1112 : CC12_GNB_PUSCH_TB                                           :	     6.77
+       1113 : CC13_GNB_PUSCH_TB                                           :	     6.64
+       1114 : CC14_GNB_PUSCH_TB                                           :	     6.59
+       1115 : CC15_GNB_PUSCH_TB                                           :	     6.32
+       1140N: CC00_GNB_PUSCH_UCI_DECODER                                  :	     1.64
+       1141 : CC01_GNB_PUSCH_UCI_DECODER                                  :	     1.65
+       1142 : CC02_GNB_PUSCH_UCI_DECODER                                  :	     1.72
+       1143 : CC03_GNB_PUSCH_UCI_DECODER                                  :	     1.70
+       1144 : CC04_GNB_PUSCH_UCI_DECODER                                  :	     1.71
+       1145 : CC05_GNB_PUSCH_UCI_DECODER                                  :	     1.72
+       1146 : CC06_GNB_PUSCH_UCI_DECODER                                  :	     1.67
+       1147 : CC07_GNB_PUSCH_UCI_DECODER                                  :	     1.49
+       1148 : CC08_GNB_PUSCH_UCI_DECODER                                  :	     1.48
+       1149 : CC09_GNB_PUSCH_UCI_DECODER                                  :	     1.48
+       1150 : CC10_GNB_PUSCH_UCI_DECODER                                  :	     1.49
+       1151 : CC11_GNB_PUSCH_UCI_DECODER                                  :	     1.50
+       1152 : CC12_GNB_PUSCH_UCI_DECODER                                  :	     1.50
+       1153 : CC13_GNB_PUSCH_UCI_DECODER                                  :	     1.52
+       1154 : CC14_GNB_PUSCH_UCI_DECODER                                  :	     1.48
+       1155 : CC15_GNB_PUSCH_UCI_DECODER                                  :	     1.42
+       1180N: CC00_GNB_PUCCH_RX                                           :	    68.01
+       1181 : CC01_GNB_PUCCH_RX                                           :	    68.46
+       1182 : CC02_GNB_PUCCH_RX                                           :	    68.40
+       1183 : CC03_GNB_PUCCH_RX                                           :	    68.20
+       1184 : CC04_GNB_PUCCH_RX                                           :	    68.12
+       1185 : CC05_GNB_PUCCH_RX                                           :	    67.42
+       1186 : CC06_GNB_PUCCH_RX                                           :	    66.06
+       1187 : CC07_GNB_PUCCH_RX                                           :	    65.00
+       1188 : CC08_GNB_PUCCH_RX                                           :	    62.86
+       1189 : CC09_GNB_PUCCH_RX                                           :	    63.43
+       1190 : CC10_GNB_PUCCH_RX                                           :	    63.47
+       1191 : CC11_GNB_PUCCH_RX                                           :	    63.14
+       1192 : CC12_GNB_PUCCH_RX                                           :	    63.35
+       1193 : CC13_GNB_PUCCH_RX                                           :	    63.37
+       1194 : CC14_GNB_PUCCH_RX                                           :	    63.40
+       1195 : CC15_GNB_PUCCH_RX                                           :	    62.62
+       1220N: CC00_GNB_PRACH_PROCESS                                      :	     0.00
+       1221 : CC01_GNB_PRACH_PROCESS                                      :	     0.00
+       1222 : CC02_GNB_PRACH_PROCESS                                      :	     0.00
+       1223 : CC03_GNB_PRACH_PROCESS                                      :	     0.00
+       1224 : CC04_GNB_PRACH_PROCESS                                      :	     0.00
+       1225 : CC05_GNB_PRACH_PROCESS                                      :	     0.00
+       1226 : CC06_GNB_PRACH_PROCESS                                      :	     0.00
+       1227 : CC07_GNB_PRACH_PROCESS                                      :	     0.00
+       1228 : CC08_GNB_PRACH_PROCESS                                      :	     0.00
+       1229 : CC09_GNB_PRACH_PROCESS                                      :	     0.00
+       1230 : CC10_GNB_PRACH_PROCESS                                      :	     0.00
+       1231 : CC11_GNB_PRACH_PROCESS                                      :	     0.00
+       1232 : CC12_GNB_PRACH_PROCESS                                      :	     0.00
+       1233 : CC13_GNB_PRACH_PROCESS                                      :	     0.00
+       1234 : CC14_GNB_PRACH_PROCESS                                      :	     0.00
+       1235 : CC15_GNB_PRACH_PROCESS                                      :	     0.00
+       1260N: CC00_GNB_SRS_RX                                             :	     0.00
+       1261 : CC01_GNB_SRS_RX                                             :	     0.00
+       1262 : CC02_GNB_SRS_RX                                             :	     0.00
+       1263 : CC03_GNB_SRS_RX                                             :	     0.00
+       1264 : CC04_GNB_SRS_RX                                             :	     0.00
+       1265 : CC05_GNB_SRS_RX                                             :	     0.00
+       1266 : CC06_GNB_SRS_RX                                             :	     0.00
+       1267 : CC07_GNB_SRS_RX                                             :	     0.00
+       1268 : CC08_GNB_SRS_RX                                             :	     0.00
+       1269 : CC09_GNB_SRS_RX                                             :	     0.00
+       1270 : CC10_GNB_SRS_RX                                             :	     0.00
+       1271 : CC11_GNB_SRS_RX                                             :	     0.00
+       1272 : CC12_GNB_SRS_RX                                             :	     0.00
+       1273 : CC13_GNB_SRS_RX                                             :	     0.00
+       1274 : CC14_GNB_SRS_RX                                             :	     0.00
+       1275 : CC15_GNB_SRS_RX                                             :	     0.00
+       1300N: CC00_GNB_SRS_CE                                             :	     0.00
+       1301 : CC01_GNB_SRS_CE                                             :	     0.00
+       1302 : CC02_GNB_SRS_CE                                             :	     0.00
+       1303 : CC03_GNB_SRS_CE                                             :	     0.00
+       1304 : CC04_GNB_SRS_CE                                             :	     0.00
+       1305 : CC05_GNB_SRS_CE                                             :	     0.00
+       1306 : CC06_GNB_SRS_CE                                             :	     0.00
+       1307 : CC07_GNB_SRS_CE                                             :	     0.00
+       1308 : CC08_GNB_SRS_CE                                             :	     0.00
+       1309 : CC09_GNB_SRS_CE                                             :	     0.00
+       1310 : CC10_GNB_SRS_CE                                             :	     0.00
+       1311 : CC11_GNB_SRS_CE                                             :	     0.00
+       1312 : CC12_GNB_SRS_CE                                             :	     0.00
+       1313 : CC13_GNB_SRS_CE                                             :	     0.00
+       1314 : CC14_GNB_SRS_CE                                             :	     0.00
+       1315 : CC15_GNB_SRS_CE                                             :	     0.00
+       1340N: CC00_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1341 : CC01_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1342 : CC02_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1343 : CC03_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1344 : CC04_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1345 : CC05_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1346 : CC06_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1347 : CC07_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1348 : CC08_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1349 : CC09_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1350 : CC10_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1351 : CC11_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1352 : CC12_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1353 : CC13_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1354 : CC14_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1355 : CC15_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1380N: CC00_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1381 : CC01_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1382 : CC02_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1383 : CC03_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1384 : CC04_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1385 : CC05_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1386 : CC06_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1387 : CC07_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1388 : CC08_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1389 : CC09_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1390 : CC10_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1391 : CC11_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1392 : CC12_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1393 : CC13_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1394 : CC14_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1395 : CC15_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1420N: CC00_GNB_SRS_CE_POST                                        :	     0.00
+       1421 : CC01_GNB_SRS_CE_POST                                        :	     0.00
+       1422 : CC02_GNB_SRS_CE_POST                                        :	     0.00
+       1423 : CC03_GNB_SRS_CE_POST                                        :	     0.00
+       1424 : CC04_GNB_SRS_CE_POST                                        :	     0.00
+       1425 : CC05_GNB_SRS_CE_POST                                        :	     0.00
+       1426 : CC06_GNB_SRS_CE_POST                                        :	     0.00
+       1427 : CC07_GNB_SRS_CE_POST                                        :	     0.00
+       1428 : CC08_GNB_SRS_CE_POST                                        :	     0.00
+       1429 : CC09_GNB_SRS_CE_POST                                        :	     0.00
+       1430 : CC10_GNB_SRS_CE_POST                                        :	     0.00
+       1431 : CC11_GNB_SRS_CE_POST                                        :	     0.00
+       1432 : CC12_GNB_SRS_CE_POST                                        :	     0.00
+       1433 : CC13_GNB_SRS_CE_POST                                        :	     0.00
+       1434 : CC14_GNB_SRS_CE_POST                                        :	     0.00
+       1435 : CC15_GNB_SRS_CE_POST                                        :	     0.00
+       1460N: CC00_GNB_SRS_REPORT                                         :	     0.00
+       1461 : CC01_GNB_SRS_REPORT                                         :	     0.00
+       1462 : CC02_GNB_SRS_REPORT                                         :	     0.00
+       1463 : CC03_GNB_SRS_REPORT                                         :	     0.00
+       1464 : CC04_GNB_SRS_REPORT                                         :	     0.00
+       1465 : CC05_GNB_SRS_REPORT                                         :	     0.00
+       1466 : CC06_GNB_SRS_REPORT                                         :	     0.00
+       1467 : CC07_GNB_SRS_REPORT                                         :	     0.00
+       1468 : CC08_GNB_SRS_REPORT                                         :	     0.00
+       1469 : CC09_GNB_SRS_REPORT                                         :	     0.00
+       1470 : CC10_GNB_SRS_REPORT                                         :	     0.00
+       1471 : CC11_GNB_SRS_REPORT                                         :	     0.00
+       1472 : CC12_GNB_SRS_REPORT                                         :	     0.00
+       1473 : CC13_GNB_SRS_REPORT                                         :	     0.00
+       1474 : CC14_GNB_SRS_REPORT                                         :	     0.00
+       1475 : CC15_GNB_SRS_REPORT                                         :	     0.00
+       1500N: CC00_GNB_UL_POST                                            :	     4.94
+       1501 : CC01_GNB_UL_POST                                            :	     5.12
+       1502 : CC02_GNB_UL_POST                                            :	     5.23
+       1503 : CC03_GNB_UL_POST                                            :	     5.26
+       1504 : CC04_GNB_UL_POST                                            :	     5.24
+       1505 : CC05_GNB_UL_POST                                            :	     5.20
+       1506 : CC06_GNB_UL_POST                                            :	     5.16
+       1507 : CC07_GNB_UL_POST                                            :	     5.09
+       1508 : CC08_GNB_UL_POST                                            :	     4.81
+       1509 : CC09_GNB_UL_POST                                            :	     4.80
+       1510 : CC10_GNB_UL_POST                                            :	     4.75
+       1511 : CC11_GNB_UL_POST                                            :	     4.82
+       1512 : CC12_GNB_UL_POST                                            :	     4.92
+       1513 : CC13_GNB_UL_POST                                            :	     4.92
+       1514 : CC14_GNB_UL_POST                                            :	     4.83
+       1515 : CC15_GNB_UL_POST                                            :	     4.64
+       1540N: CC00_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1541 : CC01_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1542 : CC02_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1543 : CC03_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1544 : CC04_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1545 : CC05_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1546 : CC06_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1547 : CC07_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1548 : CC08_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1549 : CC09_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1550 : CC10_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1551 : CC11_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1552 : CC12_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1553 : CC13_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1554 : CC14_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1555 : CC15_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1580N: CC00_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1581 : CC01_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1582 : CC02_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1583 : CC03_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1584 : CC04_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1585 : CC05_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1586 : CC06_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1587 : CC07_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1588 : CC08_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1589 : CC09_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1590 : CC10_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1591 : CC11_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1592 : CC12_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1593 : CC13_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1594 : CC14_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1595 : CC15_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1620N: CC00_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1621 : CC01_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1622 : CC02_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1623 : CC03_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1624 : CC04_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1625 : CC05_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1626 : CC06_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1627 : CC07_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1628 : CC08_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1629 : CC09_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1630 : CC10_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1631 : CC11_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1632 : CC12_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1633 : CC13_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1634 : CC14_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1635 : CC15_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1660N: CC00_GNB_DL_ORAN                                            :	     0.00
+       1661 : CC01_GNB_DL_ORAN                                            :	     0.00
+       1662 : CC02_GNB_DL_ORAN                                            :	     0.00
+       1663 : CC03_GNB_DL_ORAN                                            :	     0.00
+       1664 : CC04_GNB_DL_ORAN                                            :	     0.00
+       1665 : CC05_GNB_DL_ORAN                                            :	     0.00
+       1666 : CC06_GNB_DL_ORAN                                            :	     0.00
+       1667 : CC07_GNB_DL_ORAN                                            :	     0.00
+       1668 : CC08_GNB_DL_ORAN                                            :	     0.00
+       1669 : CC09_GNB_DL_ORAN                                            :	     0.00
+       1670 : CC10_GNB_DL_ORAN                                            :	     0.00
+       1671 : CC11_GNB_DL_ORAN                                            :	     0.00
+       1672 : CC12_GNB_DL_ORAN                                            :	     0.00
+       1673 : CC13_GNB_DL_ORAN                                            :	     0.00
+       1674 : CC14_GNB_DL_ORAN                                            :	     0.00
+       1675 : CC15_GNB_DL_ORAN                                            :	     0.00
+       1700N: CC00_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1701 : CC01_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1702 : CC02_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1703 : CC03_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1704 : CC04_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1705 : CC05_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1706 : CC06_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1707 : CC07_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1708 : CC08_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1709 : CC09_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1710 : CC10_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1711 : CC11_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1712 : CC12_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1713 : CC13_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1714 : CC14_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1715 : CC15_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1740N: CC00_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1741 : CC01_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1742 : CC02_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1743 : CC03_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1744 : CC04_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1745 : CC05_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1746 : CC06_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1747 : CC07_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1748 : CC08_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1749 : CC09_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1750 : CC10_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1751 : CC11_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1752 : CC12_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1753 : CC13_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1754 : CC14_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1755 : CC15_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1780N: CC00_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1781 : CC01_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1782 : CC02_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1783 : CC03_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1784 : CC04_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1785 : CC05_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1786 : CC06_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1787 : CC07_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1788 : CC08_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1789 : CC09_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1790 : CC10_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1791 : CC11_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1792 : CC12_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1793 : CC13_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1794 : CC14_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1795 : CC15_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1820N: CC00_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1821 : CC01_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1822 : CC02_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1823 : CC03_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1824 : CC04_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1825 : CC05_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1826 : CC06_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1827 : CC07_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1828 : CC08_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1829 : CC09_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1830 : CC10_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1831 : CC11_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1832 : CC12_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1833 : CC13_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1834 : CC14_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1835 : CC15_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1860N: CC00_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1861 : CC01_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1862 : CC02_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1863 : CC03_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1864 : CC04_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1865 : CC05_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1866 : CC06_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1867 : CC07_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1868 : CC08_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1869 : CC09_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1870 : CC10_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1871 : CC11_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1872 : CC12_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1873 : CC13_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1874 : CC14_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1875 : CC15_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1900N: CC00_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1901 : CC01_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1902 : CC02_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1903 : CC03_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1904 : CC04_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1905 : CC05_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1906 : CC06_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1907 : CC07_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1908 : CC08_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1909 : CC09_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1910 : CC10_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1911 : CC11_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1912 : CC12_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1913 : CC13_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1914 : CC14_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1915 : CC15_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1940N: CC00_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1941 : CC01_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1942 : CC02_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1943 : CC03_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1944 : CC04_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1945 : CC05_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1946 : CC06_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1947 : CC07_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1948 : CC08_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1949 : CC09_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1950 : CC10_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1951 : CC11_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1952 : CC12_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1953 : CC13_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1954 : CC14_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1955 : CC15_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1980N: CC00_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1981 : CC01_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1982 : CC02_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1983 : CC03_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1984 : CC04_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1985 : CC05_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1986 : CC06_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1987 : CC07_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1988 : CC08_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1989 : CC09_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1990 : CC10_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1991 : CC11_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1992 : CC12_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1993 : CC13_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1994 : CC14_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1995 : CC15_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       2020N: CC00_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2021 : CC01_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2022 : CC02_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2023 : CC03_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2024 : CC04_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2025 : CC05_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2026 : CC06_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2027 : CC07_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2028 : CC08_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2029 : CC09_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2030 : CC10_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2031 : CC11_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2032 : CC12_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2033 : CC13_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2034 : CC14_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2035 : CC15_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2060N: CC00_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2061 : CC01_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2062 : CC02_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2063 : CC03_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2064 : CC04_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2065 : CC05_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2066 : CC06_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2067 : CC07_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2068 : CC08_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2069 : CC09_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2070 : CC10_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2071 : CC11_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2072 : CC12_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2073 : CC13_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2074 : CC14_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2075 : CC15_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+------------------------------------------------------------------------------------------------------------
+    Latency Breakdown (Across all Cells (non-URLLC))
+             LATENCY_TASKNAME                                                     MIN  HIST_LOW       AVG  HIST_HIGH       MAX
+       3320: GNB_DL_LINK                          CC 0                    :      0.00    215.00    250.98     260.00    294.00
+       3321: GNB_DL_LINK                          CC 1                    :      0.00    215.00    252.01     260.00    299.00
+       3322: GNB_DL_LINK                          CC 2                    :      0.00    215.00    251.39     260.00    333.00
+       3323: GNB_DL_LINK                          CC 3                    :      0.00    220.00    251.57     260.00    292.00
+       3324: GNB_DL_LINK                          CC 4                    :      0.00    220.00    252.07     260.00    291.00
+       3325: GNB_DL_LINK                          CC 5                    :      0.00    220.00    252.47     260.00    295.00
+       3326: GNB_DL_LINK                          CC 6                    :      0.00    220.00    252.73     260.00    270.00
+       3327: GNB_DL_LINK                          CC 7                    :      0.00    220.00    253.13     260.00    270.00
+       3328: GNB_DL_LINK                          CC 8                    :      0.00    250.00    255.57     265.00    271.00
+       3329: GNB_DL_LINK                          CC 9                    :      0.00    250.00    256.35     265.00    271.00
+       3330: GNB_DL_LINK                          CC10                    :      0.00    250.00    256.63     265.00    309.00
+       3331: GNB_DL_LINK                          CC11                    :      0.00    250.00    256.92     265.00    304.00
+       3332: GNB_DL_LINK                          CC12                    :      0.00    250.00    257.22     265.00    273.00
+       3333: GNB_DL_LINK                          CC13                    :      0.00    250.00    257.58     265.00    294.00
+       3334: GNB_DL_LINK                          CC14                    :      0.00    250.00    257.98     265.00    297.00
+       3335: GNB_DL_LINK                          CC15                    :      0.00    250.00    259.79     275.00    313.00
+             GNB_DL_LINK                          AVG (MU 0)              :      0.00    250.00    259.79     275.00    333.00
+       3360: GNB_UL_LINK                          CC 0                    :      0.00    530.00    545.62     555.00   9590.00
+       3361: GNB_UL_LINK                          CC 1                    :      0.00    535.00    547.51     555.00   9591.00
+       3362: GNB_UL_LINK                          CC 2                    :      0.00    535.00    548.82     555.00   9591.00
+       3363: GNB_UL_LINK                          CC 3                    :      0.00    535.00    549.71     555.00   9592.00
+       3364: GNB_UL_LINK                          CC 4                    :      0.00    535.00    550.59     560.00   9592.00
+       3365: GNB_UL_LINK                          CC 5                    :      0.00    540.00    551.22     560.00   9594.00
+       3366: GNB_UL_LINK                          CC 6                    :      0.00    540.00    551.97     560.00   9595.00
+       3367: GNB_UL_LINK                          CC 7                    :      0.00    540.00    552.58     560.00   9594.00
+       3368: GNB_UL_LINK                          CC 8                    :      0.00    540.00    553.51     560.00   9595.00
+       3369: GNB_UL_LINK                          CC 9                    :      0.00    540.00    554.89     565.00   9600.00
+       3370: GNB_UL_LINK                          CC10                    :      0.00    545.00    556.13     565.00   9597.00
+       3371: GNB_UL_LINK                          CC11                    :      0.00    545.00    557.22     565.00   9600.00
+       3372: GNB_UL_LINK                          CC12                    :      0.00    545.00    558.23     565.00   9600.00
+       3373: GNB_UL_LINK                          CC13                    :      0.00    545.00    559.02     565.00   9602.00
+       3374: GNB_UL_LINK                          CC14                    :      0.00    545.00    559.70     565.00   9602.00
+       3375: GNB_UL_LINK                          CC15                    :      0.00    550.00    561.74     575.00   9603.00
+             GNB_UL_LINK                          AVG (MU 0)              :      0.00    550.00    561.74     575.00   9603.00
+       3280: GNB_SRS_LINK                         CC 0                    :      0.00      0.00      0.00       0.00      0.00
+       3281: GNB_SRS_LINK                         CC 1                    :      0.00      0.00      0.00       0.00      0.00
+       3282: GNB_SRS_LINK                         CC 2                    :      0.00      0.00      0.00       0.00      0.00
+       3283: GNB_SRS_LINK                         CC 3                    :      0.00      0.00      0.00       0.00      0.00
+       3284: GNB_SRS_LINK                         CC 4                    :      0.00      0.00      0.00       0.00      0.00
+       3285: GNB_SRS_LINK                         CC 5                    :      0.00      0.00      0.00       0.00      0.00
+       3286: GNB_SRS_LINK                         CC 6                    :      0.00      0.00      0.00       0.00      0.00
+       3287: GNB_SRS_LINK                         CC 7                    :      0.00      0.00      0.00       0.00      0.00
+       3288: GNB_SRS_LINK                         CC 8                    :      0.00      0.00      0.00       0.00      0.00
+       3289: GNB_SRS_LINK                         CC 9                    :      0.00      0.00      0.00       0.00      0.00
+       3290: GNB_SRS_LINK                         CC10                    :      0.00      0.00      0.00       0.00      0.00
+       3291: GNB_SRS_LINK                         CC11                    :      0.00      0.00      0.00       0.00      0.00
+       3292: GNB_SRS_LINK                         CC12                    :      0.00      0.00      0.00       0.00      0.00
+       3293: GNB_SRS_LINK                         CC13                    :      0.00      0.00      0.00       0.00      0.00
+       3294: GNB_SRS_LINK                         CC14                    :      0.00      0.00      0.00       0.00      0.00
+       3295: GNB_SRS_LINK                         CC15                    :      0.00      0.00      0.00       0.00      0.00
+             GNB_SRS_LINK                         AVG (MU 0)              :      0.00      0.00      0.00       0.00      0.00
+       3200: GNB_DL_FEC_LINK                      CC 0                    :      0.00     10.00     17.49      24.00    128.00
+       3201: GNB_DL_FEC_LINK                      CC 1                    :      0.00     12.00     26.15      78.00    128.00
+       3202: GNB_DL_FEC_LINK                      CC 2                    :      0.00     16.00     22.85      28.00    128.00
+       3203: GNB_DL_FEC_LINK                      CC 3                    :      0.00     18.00     23.44      30.00    122.00
+       3204: GNB_DL_FEC_LINK                      CC 4                    :      0.00     20.00     27.02      34.00    122.00
+       3205: GNB_DL_FEC_LINK                      CC 5                    :      0.00     24.00     30.15      34.00    119.00
+       3206: GNB_DL_FEC_LINK                      CC 6                    :      0.00     28.00     33.06      40.00     75.00
+       3207: GNB_DL_FEC_LINK                      CC 7                    :      0.00     30.00     37.66      44.00     69.00
+       3208: GNB_DL_FEC_LINK                      CC 8                    :      0.00     34.00     39.47      44.00     49.00
+       3209: GNB_DL_FEC_LINK                      CC 9                    :      0.00     38.00     43.16      50.00     53.00
+       3210: GNB_DL_FEC_LINK                      CC10                    :      0.00     40.00     48.08      54.00     59.00
+       3211: GNB_DL_FEC_LINK                      CC11                    :      0.00     46.00     50.87      58.00     61.00
+       3212: GNB_DL_FEC_LINK                      CC12                    :      0.00     48.00     54.03      62.00     64.00
+       3213: GNB_DL_FEC_LINK                      CC13                    :      0.00     50.00     58.38      64.00    114.00
+       3214: GNB_DL_FEC_LINK                      CC14                    :      0.00     56.00     61.54      70.00    118.00
+       3215: GNB_DL_FEC_LINK                      CC15                    :      0.00     58.00     68.43     114.00    125.00
+             GNB_DL_FEC_LINK                      AVG (MU 0)              :      0.00     58.00     68.43     114.00    128.00
+       3240: GNB_UL_FEC_LINK                      CC 0                    :      0.00     18.00     32.94      66.00     79.00
+       3241: GNB_UL_FEC_LINK                      CC 1                    :      0.00     20.00     35.98      64.00     72.00
+       3242: GNB_UL_FEC_LINK                      CC 2                    :      0.00     22.00     39.92      64.00     71.00
+       3243: GNB_UL_FEC_LINK                      CC 3                    :      0.00     24.00     41.14      62.00     70.00
+       3244: GNB_UL_FEC_LINK                      CC 4                    :      0.00     24.00     41.94      60.00     70.00
+       3245: GNB_UL_FEC_LINK                      CC 5                    :      0.00     24.00     43.94      60.00     70.00
+       3246: GNB_UL_FEC_LINK                      CC 6                    :      0.00     24.00     46.90      62.00     70.00
+       3247: GNB_UL_FEC_LINK                      CC 7                    :      0.00     28.00     51.31      68.00     71.00
+       3248: GNB_UL_FEC_LINK                      CC 8                    :      0.00     18.00     28.38      64.00     73.00
+       3249: GNB_UL_FEC_LINK                      CC 9                    :      0.00     20.00     30.83      60.00     71.00
+       3250: GNB_UL_FEC_LINK                      CC10                    :      0.00     24.00     36.44      64.00     69.00
+       3251: GNB_UL_FEC_LINK                      CC11                    :      0.00     26.00     37.81      56.00     68.00
+       3252: GNB_UL_FEC_LINK                      CC12                    :      0.00     30.00     42.05      54.00     68.00
+       3253: GNB_UL_FEC_LINK                      CC13                    :      0.00     32.00     46.36      56.00     68.00
+       3254: GNB_UL_FEC_LINK                      CC14                    :      0.00     36.00     50.87      60.00     70.00
+       3255: GNB_UL_FEC_LINK                      CC15                    :      0.00     36.00     54.99      66.00     72.00
+             GNB_UL_FEC_LINK                      AVG (MU 0)              :      0.00     36.00     54.99      68.00     79.00
+       3400: GNB_UL_SRS_FFT_LINK                  CC 0                    :      0.00      0.00      0.00       0.00      0.00
+       3401: GNB_UL_SRS_FFT_LINK                  CC 1                    :      0.00      0.00      0.00       0.00      0.00
+       3402: GNB_UL_SRS_FFT_LINK                  CC 2                    :      0.00      0.00      0.00       0.00      0.00
+       3403: GNB_UL_SRS_FFT_LINK                  CC 3                    :      0.00      0.00      0.00       0.00      0.00
+       3404: GNB_UL_SRS_FFT_LINK                  CC 4                    :      0.00      0.00      0.00       0.00      0.00
+       3405: GNB_UL_SRS_FFT_LINK                  CC 5                    :      0.00      0.00      0.00       0.00      0.00
+       3406: GNB_UL_SRS_FFT_LINK                  CC 6                    :      0.00      0.00      0.00       0.00      0.00
+       3407: GNB_UL_SRS_FFT_LINK                  CC 7                    :      0.00      0.00      0.00       0.00      0.00
+       3408: GNB_UL_SRS_FFT_LINK                  CC 8                    :      0.00      0.00      0.00       0.00      0.00
+       3409: GNB_UL_SRS_FFT_LINK                  CC 9                    :      0.00      0.00      0.00       0.00      0.00
+       3410: GNB_UL_SRS_FFT_LINK                  CC10                    :      0.00      0.00      0.00       0.00      0.00
+       3411: GNB_UL_SRS_FFT_LINK                  CC11                    :      0.00      0.00      0.00       0.00      0.00
+       3412: GNB_UL_SRS_FFT_LINK                  CC12                    :      0.00      0.00      0.00       0.00      0.00
+       3413: GNB_UL_SRS_FFT_LINK                  CC13                    :      0.00      0.00      0.00       0.00      0.00
+       3414: GNB_UL_SRS_FFT_LINK                  CC14                    :      0.00      0.00      0.00       0.00      0.00
+       3415: GNB_UL_SRS_FFT_LINK                  CC15                    :      0.00      0.00      0.00       0.00      0.00
+             GNB_UL_SRS_FFT_LINK                  AVG (MU 0)              :      0.00      0.00      0.00       0.00      0.00
+------------------------------------------------------------------------------------------------------------
+====~~~~====~~~~====~~~~====~~~~====~~~~====~~~~====~~~~====~~~~====~~~~====~~~~====~~~~====~~~~====~~~~====~~~~~~~~====~~~~====~~~~
+
+All data in this sheet are presented in usecs
+Test: FD_18010 (Num Cells: 18) (Num TTI: 20006) (ttiDuration: 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000 usecs) (testStats: 1 20206 1)(numBbuCores: 8 [coremask: 0x000000f0000000f0 ]) (numSrsBbuCores: 0 [srscoremask: 0x0000000000000000 ]) (numDlbeamBbuCores: 0 [dlbeamcoremask: 0x0000000000000000 ]) (avgBbuCpuUtilization: 58) (avgSrsBbuCpuUtilization: 0) (avgDlbeamBbuCpuUtilization: 0)
+Options1: (pdsch: 0) (pusch_ce: 0) (pusch_mmse: 0) (pusch_llr_rx: 0) (pucch: 0) (srs: 0) (ul_beam: 0) (dl_beam: 0)
+Options2: (fec_enc: 1) (fec_dec: 1) (fec_dec_iter: 12) (fec_term: 0) (sleep: 1) (pdsch_sym_split: 0) (dl_reset: 1)
+Options3: (ce_interp: 2) (pusch_inter: 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4)
+FrameWorkOptions: (num_queue: 4) (num_context: 1) (max_fetch_context: 1)
+Options4: (Cell_0: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_1: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_2: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_3: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_4: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_5: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_6: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_7: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_8: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_9: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_10: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_11: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_12: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_13: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_14: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_15: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_16: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+Options4: (Cell_17: fd/mu0_10mhz/10/fd_testconfig_tst10.cfg ) (FrameType: FDD )
+------------------------------------------------------------------------------------------------------------
+    Core Level Breakdown (Average across all Cells (non-URLLC)) MU (0)
+        TOTAL DL Logical Cores (Per Cell)                                 :	     0.08
+        TOTAL UL Logical Cores (Per Cell)                                 :	     0.15
+        TOTAL SRS Logical Cores (Per Cell)                                :	     0.00
+        TOTAL DL BeamForming Logical Cores (Per Cell)                     :	     0.00
+        TOTAL UL BeamForming Logical Cores (Per Cell)                     :	     0.00
+------------------------------------------------------------------------------------------------------------
+    High Level Breakdown (Average across all Cells (non-URLLC)) MU (0)
+       DL CONTROL                                                         :	     0.00
+       PDSCH                                                              :	    57.46
+       PDSCH FEC                                                          :	     9.80
+       PUSCH FEC                                                          :	    11.41
+       PUSCH                                                              :	    55.16
+       PUCCH                                                              :	    64.35
+       PRACH                                                              :	     0.00
+       SRS                                                                :	     0.00
+       DL BEAM                                                            :	     0.00
+       UL BEAM                                                            :	     0.00
+       MAC-PHY API                                                        :	    34.41
+       OTHERS                                                             :	     5.88
+------------------------------------------------------------------------------------------------------------
+    Low Level Function Breakdown (Average across all Cells (non-URLLC)) MU (0)
+        100 : GNB_DL_CFG                                                  :	    11.38
+        140N: GNB_UL_CFG                                                  :	    23.03
+        180N: GNB_PDSCH_TB_CRC                                            :	     4.31
+        220 : GNB_PDSCH_CB_SETUP                                          :	     3.55
+        260 : GNB_PDSCH_TB_QUEUE                                          :	     1.93
+        300N: GNB_PDSCH_SCRAMBLER                                         :	     5.32
+        340 : GNB_PDSCH_RS                                                :	    19.59
+        380 : GNB_DL_SYMBOL_PROC                                          :	    32.56
+        420 : GNB_DL_PDSCH_BEAM_FORMING                                   :	     0.00
+        460N: GNB_DL_CSI_PROC                                             :	     0.00
+        500 : GNB_DL_DCI_PROC                                             :	     0.00
+        540 : GNB_DL_UCI_PROC                                             :	     0.00
+        580 : GNB_DL_DCI_PRECODER                                         :	     0.00
+        620 : GNB_DL_PBCH_PROC                                            :	     0.00
+        660N: GNB_DL_RESET_BUF                                            :	     1.22
+        700 : GNB_DL_POST                                                 :	     0.09
+        740N: GNB_PUSCH_DMRS                                              :	     5.57
+        780 : GNB_PUSCH_CE_SYMB0                                          :	     1.60
+        820 : GNB_PUSCH_CE_SYMB7                                          :	    18.29
+        860 : GNB_PUSCH_RNN_CALC                                          :	     0.00
+        900 : GNB_PUSCH_MMSE_SYMB0                                        :	     0.19
+        940 : GNB_PUSCH_MMSE_SYMB7                                        :	    25.38
+        980 : GNB_PUSCH_DESCRAMBLE                                        :	     2.65
+       1060N: GNB_PUSCH_CB_SETUP                                          :	     2.28
+       1020 : GNB_PUSCH_DECODER                                           :	     2.34
+       1100 : GNB_PUSCH_TB                                                :	     6.79
+       1140N: GNB_PUSCH_UCI_DECODER                                       :	     1.48
+       1180N: GNB_PUCCH_RX                                                :	    64.35
+       1220N: GNB_PRACH_PROCESS                                           :	     0.00
+       1260N: GNB_SRS_RX                                                  :	     0.00
+       1300 : GNB_SRS_CE                                                  :	     0.00
+       1340 : GNB_SRS_FFT_CB_SETUP                                        :	     0.00
+       1380 : GNB_SRS_FFT_RUN_FUNC                                        :	     0.00
+       1420 : GNB_SRS_CE_POST                                             :	     0.00
+       1460 : GNB_SRS_REPORT                                              :	     0.00
+       1500N: GNB_UL_POST                                                 :	     4.58
+       1540N: GNB_DL_BEAM_WEIGHT_TASK                                     :	     0.00
+       1580N: GNB_UL_BEAM_WEIGHT_TASK                                     :	     0.00
+       1620N: GNB_UL_PUCCH_BEAM_WEIGHT_TASK                               :	     0.00
+       1660N: GNB_DL_ORAN                                                 :	     0.00
+       1700 : GNB_DL_IQ_COMPRESS                                          :	     0.00
+       1740N: GNB_UL_IQ_DECOMPRESS                                        :	     0.00
+       1780N: GNB_DL_BEAM_WEIGHT_COMPRESS                                 :	     0.00
+       1820N: GNB_UL_BEAM_WEIGHT_COMPRESS                                 :	     0.00
+       1860N: GNB_UL_SRS_IQ_DECOMPRESS                                    :	     0.00
+       1900N: GNB_DL_OFDM_CTRL_COMPRESS                                   :	     0.00
+       1940 : GNB_DL_OFDM_RS_COMPRESS                                     :	     0.00
+       1980 : GNB_DL_OFDM_DATA_COMPRESS                                   :	     0.00
+       2020N: GNB_UL_IQ_DECOMP_PUSCH                                      :	     0.00
+       2060N: GNB_UL_IQ_DECOMP_PUCCH                                      :	     0.00
+------------------------------------------------------------------------------------------------------------
+    Low Level Function Breakdown (Per Cell (non-URLLC))
+        100 : CC00_GNB_DL_CFG                                             :	    12.77
+        101 : CC01_GNB_DL_CFG                                             :	    12.97
+        102 : CC02_GNB_DL_CFG                                             :	    12.08
+        103 : CC03_GNB_DL_CFG                                             :	    12.95
+        104 : CC04_GNB_DL_CFG                                             :	    10.53
+        105 : CC05_GNB_DL_CFG                                             :	    11.94
+        106 : CC06_GNB_DL_CFG                                             :	    11.80
+        107 : CC07_GNB_DL_CFG                                             :	    11.23
+        108 : CC08_GNB_DL_CFG                                             :	    11.29
+        109 : CC09_GNB_DL_CFG                                             :	    11.09
+        110 : CC10_GNB_DL_CFG                                             :	    11.28
+        111 : CC11_GNB_DL_CFG                                             :	    10.61
+        112 : CC12_GNB_DL_CFG                                             :	    10.90
+        113 : CC13_GNB_DL_CFG                                             :	    11.02
+        114 : CC14_GNB_DL_CFG                                             :	    10.89
+        115 : CC15_GNB_DL_CFG                                             :	    10.36
+        116 : CC16_GNB_DL_CFG                                             :	    10.55
+        117 : CC17_GNB_DL_CFG                                             :	    10.61
+        140N: CC00_GNB_UL_CFG                                             :	    26.53
+        141 : CC01_GNB_UL_CFG                                             :	    26.16
+        142 : CC02_GNB_UL_CFG                                             :	    25.88
+        143 : CC03_GNB_UL_CFG                                             :	    26.43
+        144 : CC04_GNB_UL_CFG                                             :	    22.89
+        145 : CC05_GNB_UL_CFG                                             :	    24.20
+        146 : CC06_GNB_UL_CFG                                             :	    23.39
+        147 : CC07_GNB_UL_CFG                                             :	    23.93
+        148 : CC08_GNB_UL_CFG                                             :	    22.18
+        149 : CC09_GNB_UL_CFG                                             :	    22.73
+        150 : CC10_GNB_UL_CFG                                             :	    21.53
+        151 : CC11_GNB_UL_CFG                                             :	    21.24
+        152 : CC12_GNB_UL_CFG                                             :	    21.95
+        153 : CC13_GNB_UL_CFG                                             :	    21.78
+        154 : CC14_GNB_UL_CFG                                             :	    21.17
+        155 : CC15_GNB_UL_CFG                                             :	    20.70
+        156 : CC16_GNB_UL_CFG                                             :	    21.18
+        157 : CC17_GNB_UL_CFG                                             :	    20.71
+        180N: CC00_GNB_PDSCH_TB_CRC                                       :	     4.13
+        181 : CC01_GNB_PDSCH_TB_CRC                                       :	     4.21
+        182 : CC02_GNB_PDSCH_TB_CRC                                       :	     4.57
+        183 : CC03_GNB_PDSCH_TB_CRC                                       :	     4.24
+        184 : CC04_GNB_PDSCH_TB_CRC                                       :	     4.13
+        185 : CC05_GNB_PDSCH_TB_CRC                                       :	     4.21
+        186 : CC06_GNB_PDSCH_TB_CRC                                       :	     4.27
+        187 : CC07_GNB_PDSCH_TB_CRC                                       :	     4.26
+        188 : CC08_GNB_PDSCH_TB_CRC                                       :	     4.23
+        189 : CC09_GNB_PDSCH_TB_CRC                                       :	     4.31
+        190 : CC10_GNB_PDSCH_TB_CRC                                       :	     4.34
+        191 : CC11_GNB_PDSCH_TB_CRC                                       :	     4.32
+        192 : CC12_GNB_PDSCH_TB_CRC                                       :	     4.44
+        193 : CC13_GNB_PDSCH_TB_CRC                                       :	     4.56
+        194 : CC14_GNB_PDSCH_TB_CRC                                       :	     4.56
+        195 : CC15_GNB_PDSCH_TB_CRC                                       :	     4.58
+        196 : CC16_GNB_PDSCH_TB_CRC                                       :	     4.29
+        197 : CC17_GNB_PDSCH_TB_CRC                                       :	     4.04
+        220N: CC00_GNB_PDSCH_CB_SETUP                                     :	     3.54
+        221 : CC01_GNB_PDSCH_CB_SETUP                                     :	     3.86
+        222 : CC02_GNB_PDSCH_CB_SETUP                                     :	     3.44
+        223 : CC03_GNB_PDSCH_CB_SETUP                                     :	     3.57
+        224 : CC04_GNB_PDSCH_CB_SETUP                                     :	     3.59
+        225 : CC05_GNB_PDSCH_CB_SETUP                                     :	     3.56
+        226 : CC06_GNB_PDSCH_CB_SETUP                                     :	     3.68
+        227 : CC07_GNB_PDSCH_CB_SETUP                                     :	     3.88
+        228 : CC08_GNB_PDSCH_CB_SETUP                                     :	     3.52
+        229 : CC09_GNB_PDSCH_CB_SETUP                                     :	     3.38
+        230 : CC10_GNB_PDSCH_CB_SETUP                                     :	     3.42
+        231 : CC11_GNB_PDSCH_CB_SETUP                                     :	     3.52
+        232 : CC12_GNB_PDSCH_CB_SETUP                                     :	     3.53
+        233 : CC13_GNB_PDSCH_CB_SETUP                                     :	     3.45
+        234 : CC14_GNB_PDSCH_CB_SETUP                                     :	     3.42
+        235 : CC15_GNB_PDSCH_CB_SETUP                                     :	     3.56
+        236 : CC16_GNB_PDSCH_CB_SETUP                                     :	     3.60
+        237 : CC17_GNB_PDSCH_CB_SETUP                                     :	     3.40
+        260N: CC00_GNB_PDSCH_TB_QUEUE                                     :	     2.28
+        261 : CC01_GNB_PDSCH_TB_QUEUE                                     :	     2.24
+        262 : CC02_GNB_PDSCH_TB_QUEUE                                     :	     2.22
+        263 : CC03_GNB_PDSCH_TB_QUEUE                                     :	     1.86
+        264 : CC04_GNB_PDSCH_TB_QUEUE                                     :	     1.79
+        265 : CC05_GNB_PDSCH_TB_QUEUE                                     :	     1.89
+        266 : CC06_GNB_PDSCH_TB_QUEUE                                     :	     1.82
+        267 : CC07_GNB_PDSCH_TB_QUEUE                                     :	     1.73
+        268 : CC08_GNB_PDSCH_TB_QUEUE                                     :	     1.82
+        269 : CC09_GNB_PDSCH_TB_QUEUE                                     :	     1.92
+        270 : CC10_GNB_PDSCH_TB_QUEUE                                     :	     1.95
+        271 : CC11_GNB_PDSCH_TB_QUEUE                                     :	     1.87
+        272 : CC12_GNB_PDSCH_TB_QUEUE                                     :	     1.87
+        273 : CC13_GNB_PDSCH_TB_QUEUE                                     :	     1.99
+        274 : CC14_GNB_PDSCH_TB_QUEUE                                     :	     1.98
+        275 : CC15_GNB_PDSCH_TB_QUEUE                                     :	     1.92
+        276 : CC16_GNB_PDSCH_TB_QUEUE                                     :	     1.83
+        277 : CC17_GNB_PDSCH_TB_QUEUE                                     :	     1.86
+        300N: CC00_GNB_PDSCH_SCRAMBLER                                    :	     5.38
+        301 : CC01_GNB_PDSCH_SCRAMBLER                                    :	     5.42
+        302 : CC02_GNB_PDSCH_SCRAMBLER                                    :	     5.51
+        303 : CC03_GNB_PDSCH_SCRAMBLER                                    :	     5.51
+        304 : CC04_GNB_PDSCH_SCRAMBLER                                    :	     5.39
+        305 : CC05_GNB_PDSCH_SCRAMBLER                                    :	     5.40
+        306 : CC06_GNB_PDSCH_SCRAMBLER                                    :	     5.29
+        307 : CC07_GNB_PDSCH_SCRAMBLER                                    :	     5.33
+        308 : CC08_GNB_PDSCH_SCRAMBLER                                    :	     5.41
+        309 : CC09_GNB_PDSCH_SCRAMBLER                                    :	     5.30
+        310 : CC10_GNB_PDSCH_SCRAMBLER                                    :	     5.26
+        311 : CC11_GNB_PDSCH_SCRAMBLER                                    :	     5.13
+        312 : CC12_GNB_PDSCH_SCRAMBLER                                    :	     5.35
+        313 : CC13_GNB_PDSCH_SCRAMBLER                                    :	     5.35
+        314 : CC14_GNB_PDSCH_SCRAMBLER                                    :	     5.12
+        315 : CC15_GNB_PDSCH_SCRAMBLER                                    :	     4.98
+        316 : CC16_GNB_PDSCH_SCRAMBLER                                    :	     5.31
+        317 : CC17_GNB_PDSCH_SCRAMBLER                                    :	     5.28
+        340N: CC00_GNB_PDSCH_RS                                           :	    20.69
+        341 : CC01_GNB_PDSCH_RS                                           :	    20.74
+        342 : CC02_GNB_PDSCH_RS                                           :	    20.48
+        343 : CC03_GNB_PDSCH_RS                                           :	    20.37
+        344 : CC04_GNB_PDSCH_RS                                           :	    20.22
+        345 : CC05_GNB_PDSCH_RS                                           :	    19.94
+        346 : CC06_GNB_PDSCH_RS                                           :	    19.77
+        347 : CC07_GNB_PDSCH_RS                                           :	    19.36
+        348 : CC08_GNB_PDSCH_RS                                           :	    18.96
+        349 : CC09_GNB_PDSCH_RS                                           :	    19.02
+        350 : CC10_GNB_PDSCH_RS                                           :	    19.17
+        351 : CC11_GNB_PDSCH_RS                                           :	    19.13
+        352 : CC12_GNB_PDSCH_RS                                           :	    19.11
+        353 : CC13_GNB_PDSCH_RS                                           :	    19.20
+        354 : CC14_GNB_PDSCH_RS                                           :	    19.05
+        355 : CC15_GNB_PDSCH_RS                                           :	    18.90
+        356 : CC16_GNB_PDSCH_RS                                           :	    19.27
+        357 : CC17_GNB_PDSCH_RS                                           :	    19.18
+        380N: CC00_GNB_DL_SYMBOL_PROC                                     :	    33.14
+        381 : CC01_GNB_DL_SYMBOL_PROC                                     :	    33.43
+        382 : CC02_GNB_DL_SYMBOL_PROC                                     :	    33.43
+        383 : CC03_GNB_DL_SYMBOL_PROC                                     :	    33.47
+        384 : CC04_GNB_DL_SYMBOL_PROC                                     :	    33.37
+        385 : CC05_GNB_DL_SYMBOL_PROC                                     :	    32.67
+        386 : CC06_GNB_DL_SYMBOL_PROC                                     :	    32.86
+        387 : CC07_GNB_DL_SYMBOL_PROC                                     :	    33.34
+        388 : CC08_GNB_DL_SYMBOL_PROC                                     :	    33.42
+        389 : CC09_GNB_DL_SYMBOL_PROC                                     :	    33.22
+        390 : CC10_GNB_DL_SYMBOL_PROC                                     :	    32.86
+        391 : CC11_GNB_DL_SYMBOL_PROC                                     :	    32.78
+        392 : CC12_GNB_DL_SYMBOL_PROC                                     :	    32.35
+        393 : CC13_GNB_DL_SYMBOL_PROC                                     :	    32.19
+        394 : CC14_GNB_DL_SYMBOL_PROC                                     :	    30.53
+        395 : CC15_GNB_DL_SYMBOL_PROC                                     :	    30.26
+        396 : CC16_GNB_DL_SYMBOL_PROC                                     :	    31.22
+        397 : CC17_GNB_DL_SYMBOL_PROC                                     :	    31.47
+        420N: CC00_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        421 : CC01_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        422 : CC02_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        423 : CC03_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        424 : CC04_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        425 : CC05_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        426 : CC06_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        427 : CC07_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        428 : CC08_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        429 : CC09_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        430 : CC10_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        431 : CC11_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        432 : CC12_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        433 : CC13_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        434 : CC14_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        435 : CC15_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        436 : CC16_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        437 : CC17_GNB_DL_PDSCH_BEAM_FORMING                              :	     0.00
+        460N: CC00_GNB_DL_CSI_PROC                                        :	     0.00
+        461 : CC01_GNB_DL_CSI_PROC                                        :	     0.00
+        462 : CC02_GNB_DL_CSI_PROC                                        :	     0.00
+        463 : CC03_GNB_DL_CSI_PROC                                        :	     0.00
+        464 : CC04_GNB_DL_CSI_PROC                                        :	     0.00
+        465 : CC05_GNB_DL_CSI_PROC                                        :	     0.00
+        466 : CC06_GNB_DL_CSI_PROC                                        :	     0.00
+        467 : CC07_GNB_DL_CSI_PROC                                        :	     0.00
+        468 : CC08_GNB_DL_CSI_PROC                                        :	     0.00
+        469 : CC09_GNB_DL_CSI_PROC                                        :	     0.00
+        470 : CC10_GNB_DL_CSI_PROC                                        :	     0.00
+        471 : CC11_GNB_DL_CSI_PROC                                        :	     0.00
+        472 : CC12_GNB_DL_CSI_PROC                                        :	     0.00
+        473 : CC13_GNB_DL_CSI_PROC                                        :	     0.00
+        474 : CC14_GNB_DL_CSI_PROC                                        :	     0.00
+        475 : CC15_GNB_DL_CSI_PROC                                        :	     0.00
+        476 : CC16_GNB_DL_CSI_PROC                                        :	     0.00
+        477 : CC17_GNB_DL_CSI_PROC                                        :	     0.00
+        500N: CC00_GNB_DL_DCI_PROC                                        :	     0.00
+        501 : CC01_GNB_DL_DCI_PROC                                        :	     0.00
+        502 : CC02_GNB_DL_DCI_PROC                                        :	     0.00
+        503 : CC03_GNB_DL_DCI_PROC                                        :	     0.00
+        504 : CC04_GNB_DL_DCI_PROC                                        :	     0.00
+        505 : CC05_GNB_DL_DCI_PROC                                        :	     0.00
+        506 : CC06_GNB_DL_DCI_PROC                                        :	     0.00
+        507 : CC07_GNB_DL_DCI_PROC                                        :	     0.00
+        508 : CC08_GNB_DL_DCI_PROC                                        :	     0.00
+        509 : CC09_GNB_DL_DCI_PROC                                        :	     0.00
+        510 : CC10_GNB_DL_DCI_PROC                                        :	     0.00
+        511 : CC11_GNB_DL_DCI_PROC                                        :	     0.00
+        512 : CC12_GNB_DL_DCI_PROC                                        :	     0.00
+        513 : CC13_GNB_DL_DCI_PROC                                        :	     0.00
+        514 : CC14_GNB_DL_DCI_PROC                                        :	     0.00
+        515 : CC15_GNB_DL_DCI_PROC                                        :	     0.00
+        516 : CC16_GNB_DL_DCI_PROC                                        :	     0.00
+        517 : CC17_GNB_DL_DCI_PROC                                        :	     0.00
+        540N: CC00_GNB_DL_UCI_PROC                                        :	     0.00
+        541 : CC01_GNB_DL_UCI_PROC                                        :	     0.00
+        542 : CC02_GNB_DL_UCI_PROC                                        :	     0.00
+        543 : CC03_GNB_DL_UCI_PROC                                        :	     0.00
+        544 : CC04_GNB_DL_UCI_PROC                                        :	     0.00
+        545 : CC05_GNB_DL_UCI_PROC                                        :	     0.00
+        546 : CC06_GNB_DL_UCI_PROC                                        :	     0.00
+        547 : CC07_GNB_DL_UCI_PROC                                        :	     0.00
+        548 : CC08_GNB_DL_UCI_PROC                                        :	     0.00
+        549 : CC09_GNB_DL_UCI_PROC                                        :	     0.00
+        550 : CC10_GNB_DL_UCI_PROC                                        :	     0.00
+        551 : CC11_GNB_DL_UCI_PROC                                        :	     0.00
+        552 : CC12_GNB_DL_UCI_PROC                                        :	     0.00
+        553 : CC13_GNB_DL_UCI_PROC                                        :	     0.00
+        554 : CC14_GNB_DL_UCI_PROC                                        :	     0.00
+        555 : CC15_GNB_DL_UCI_PROC                                        :	     0.00
+        556 : CC16_GNB_DL_UCI_PROC                                        :	     0.00
+        557 : CC17_GNB_DL_UCI_PROC                                        :	     0.00
+        580N: CC00_GNB_DL_DCI_PRECODER                                    :	     0.00
+        581 : CC01_GNB_DL_DCI_PRECODER                                    :	     0.00
+        582 : CC02_GNB_DL_DCI_PRECODER                                    :	     0.00
+        583 : CC03_GNB_DL_DCI_PRECODER                                    :	     0.00
+        584 : CC04_GNB_DL_DCI_PRECODER                                    :	     0.00
+        585 : CC05_GNB_DL_DCI_PRECODER                                    :	     0.00
+        586 : CC06_GNB_DL_DCI_PRECODER                                    :	     0.00
+        587 : CC07_GNB_DL_DCI_PRECODER                                    :	     0.00
+        588 : CC08_GNB_DL_DCI_PRECODER                                    :	     0.00
+        589 : CC09_GNB_DL_DCI_PRECODER                                    :	     0.00
+        590 : CC10_GNB_DL_DCI_PRECODER                                    :	     0.00
+        591 : CC11_GNB_DL_DCI_PRECODER                                    :	     0.00
+        592 : CC12_GNB_DL_DCI_PRECODER                                    :	     0.00
+        593 : CC13_GNB_DL_DCI_PRECODER                                    :	     0.00
+        594 : CC14_GNB_DL_DCI_PRECODER                                    :	     0.00
+        595 : CC15_GNB_DL_DCI_PRECODER                                    :	     0.00
+        596 : CC16_GNB_DL_DCI_PRECODER                                    :	     0.00
+        597 : CC17_GNB_DL_DCI_PRECODER                                    :	     0.00
+        620N: CC00_GNB_DL_PBCH_PROC                                       :	     0.00
+        621 : CC01_GNB_DL_PBCH_PROC                                       :	     0.00
+        622 : CC02_GNB_DL_PBCH_PROC                                       :	     0.00
+        623 : CC03_GNB_DL_PBCH_PROC                                       :	     0.00
+        624 : CC04_GNB_DL_PBCH_PROC                                       :	     0.00
+        625 : CC05_GNB_DL_PBCH_PROC                                       :	     0.00
+        626 : CC06_GNB_DL_PBCH_PROC                                       :	     0.00
+        627 : CC07_GNB_DL_PBCH_PROC                                       :	     0.00
+        628 : CC08_GNB_DL_PBCH_PROC                                       :	     0.00
+        629 : CC09_GNB_DL_PBCH_PROC                                       :	     0.00
+        630 : CC10_GNB_DL_PBCH_PROC                                       :	     0.00
+        631 : CC11_GNB_DL_PBCH_PROC                                       :	     0.00
+        632 : CC12_GNB_DL_PBCH_PROC                                       :	     0.00
+        633 : CC13_GNB_DL_PBCH_PROC                                       :	     0.00
+        634 : CC14_GNB_DL_PBCH_PROC                                       :	     0.00
+        635 : CC15_GNB_DL_PBCH_PROC                                       :	     0.00
+        636 : CC16_GNB_DL_PBCH_PROC                                       :	     0.00
+        637 : CC17_GNB_DL_PBCH_PROC                                       :	     0.00
+        660N: CC00_GNB_DL_RESET_BUF                                       :	     1.28
+        661 : CC01_GNB_DL_RESET_BUF                                       :	     1.41
+        662 : CC02_GNB_DL_RESET_BUF                                       :	     1.31
+        663 : CC03_GNB_DL_RESET_BUF                                       :	     1.28
+        664 : CC04_GNB_DL_RESET_BUF                                       :	     1.20
+        665 : CC05_GNB_DL_RESET_BUF                                       :	     1.18
+        666 : CC06_GNB_DL_RESET_BUF                                       :	     1.18
+        667 : CC07_GNB_DL_RESET_BUF                                       :	     1.20
+        668 : CC08_GNB_DL_RESET_BUF                                       :	     1.17
+        669 : CC09_GNB_DL_RESET_BUF                                       :	     1.16
+        670 : CC10_GNB_DL_RESET_BUF                                       :	     1.15
+        671 : CC11_GNB_DL_RESET_BUF                                       :	     1.22
+        672 : CC12_GNB_DL_RESET_BUF                                       :	     1.18
+        673 : CC13_GNB_DL_RESET_BUF                                       :	     1.20
+        674 : CC14_GNB_DL_RESET_BUF                                       :	     1.26
+        675 : CC15_GNB_DL_RESET_BUF                                       :	     1.27
+        676 : CC16_GNB_DL_RESET_BUF                                       :	     1.20
+        677 : CC17_GNB_DL_RESET_BUF                                       :	     1.10
+        700N: CC00_GNB_DL_POST                                            :	     0.10
+        701 : CC01_GNB_DL_POST                                            :	     0.09
+        702 : CC02_GNB_DL_POST                                            :	     0.09
+        703 : CC03_GNB_DL_POST                                            :	     0.08
+        704 : CC04_GNB_DL_POST                                            :	     0.08
+        705 : CC05_GNB_DL_POST                                            :	     0.08
+        706 : CC06_GNB_DL_POST                                            :	     0.09
+        707 : CC07_GNB_DL_POST                                            :	     0.09
+        708 : CC08_GNB_DL_POST                                            :	     0.08
+        709 : CC09_GNB_DL_POST                                            :	     0.08
+        710 : CC10_GNB_DL_POST                                            :	     0.08
+        711 : CC11_GNB_DL_POST                                            :	     0.09
+        712 : CC12_GNB_DL_POST                                            :	     0.08
+        713 : CC13_GNB_DL_POST                                            :	     0.08
+        714 : CC14_GNB_DL_POST                                            :	     0.09
+        715 : CC15_GNB_DL_POST                                            :	     0.09
+        716 : CC16_GNB_DL_POST                                            :	     0.11
+        717 : CC17_GNB_DL_POST                                            :	     0.11
+        740N: CC00_GNB_PUSCH_DMRS                                         :	     5.81
+        741 : CC01_GNB_PUSCH_DMRS                                         :	     5.83
+        742 : CC02_GNB_PUSCH_DMRS                                         :	     5.79
+        743 : CC03_GNB_PUSCH_DMRS                                         :	     5.61
+        744 : CC04_GNB_PUSCH_DMRS                                         :	     5.60
+        745 : CC05_GNB_PUSCH_DMRS                                         :	     5.45
+        746 : CC06_GNB_PUSCH_DMRS                                         :	     5.47
+        747 : CC07_GNB_PUSCH_DMRS                                         :	     5.58
+        748 : CC08_GNB_PUSCH_DMRS                                         :	     5.55
+        749 : CC09_GNB_PUSCH_DMRS                                         :	     5.47
+        750 : CC10_GNB_PUSCH_DMRS                                         :	     5.42
+        751 : CC11_GNB_PUSCH_DMRS                                         :	     5.45
+        752 : CC12_GNB_PUSCH_DMRS                                         :	     5.47
+        753 : CC13_GNB_PUSCH_DMRS                                         :	     5.49
+        754 : CC14_GNB_PUSCH_DMRS                                         :	     5.44
+        755 : CC15_GNB_PUSCH_DMRS                                         :	     5.53
+        756 : CC16_GNB_PUSCH_DMRS                                         :	     5.64
+        757 : CC17_GNB_PUSCH_DMRS                                         :	     5.64
+        780N: CC00_GNB_PUSCH_CE_SYMB0                                     :	     1.64
+        781 : CC01_GNB_PUSCH_CE_SYMB0                                     :	     1.66
+        782 : CC02_GNB_PUSCH_CE_SYMB0                                     :	     1.64
+        783 : CC03_GNB_PUSCH_CE_SYMB0                                     :	     1.56
+        784 : CC04_GNB_PUSCH_CE_SYMB0                                     :	     1.59
+        785 : CC05_GNB_PUSCH_CE_SYMB0                                     :	     1.56
+        786 : CC06_GNB_PUSCH_CE_SYMB0                                     :	     1.55
+        787 : CC07_GNB_PUSCH_CE_SYMB0                                     :	     1.55
+        788 : CC08_GNB_PUSCH_CE_SYMB0                                     :	     1.56
+        789 : CC09_GNB_PUSCH_CE_SYMB0                                     :	     1.58
+        790 : CC10_GNB_PUSCH_CE_SYMB0                                     :	     1.58
+        791 : CC11_GNB_PUSCH_CE_SYMB0                                     :	     1.56
+        792 : CC12_GNB_PUSCH_CE_SYMB0                                     :	     1.56
+        793 : CC13_GNB_PUSCH_CE_SYMB0                                     :	     1.57
+        794 : CC14_GNB_PUSCH_CE_SYMB0                                     :	     1.57
+        795 : CC15_GNB_PUSCH_CE_SYMB0                                     :	     1.59
+        796 : CC16_GNB_PUSCH_CE_SYMB0                                     :	     1.71
+        797 : CC17_GNB_PUSCH_CE_SYMB0                                     :	     1.72
+        820N: CC00_GNB_PUSCH_CE_SYMB7                                     :	    20.25
+        821 : CC01_GNB_PUSCH_CE_SYMB7                                     :	    20.08
+        822 : CC02_GNB_PUSCH_CE_SYMB7                                     :	    19.82
+        823 : CC03_GNB_PUSCH_CE_SYMB7                                     :	    19.40
+        824 : CC04_GNB_PUSCH_CE_SYMB7                                     :	    19.72
+        825 : CC05_GNB_PUSCH_CE_SYMB7                                     :	    18.92
+        826 : CC06_GNB_PUSCH_CE_SYMB7                                     :	    18.32
+        827 : CC07_GNB_PUSCH_CE_SYMB7                                     :	    18.32
+        828 : CC08_GNB_PUSCH_CE_SYMB7                                     :	    17.35
+        829 : CC09_GNB_PUSCH_CE_SYMB7                                     :	    17.58
+        830 : CC10_GNB_PUSCH_CE_SYMB7                                     :	    17.85
+        831 : CC11_GNB_PUSCH_CE_SYMB7                                     :	    17.53
+        832 : CC12_GNB_PUSCH_CE_SYMB7                                     :	    17.68
+        833 : CC13_GNB_PUSCH_CE_SYMB7                                     :	    17.39
+        834 : CC14_GNB_PUSCH_CE_SYMB7                                     :	    17.56
+        835 : CC15_GNB_PUSCH_CE_SYMB7                                     :	    17.27
+        836 : CC16_GNB_PUSCH_CE_SYMB7                                     :	    17.15
+        837 : CC17_GNB_PUSCH_CE_SYMB7                                     :	    17.01
+        860N: CC00_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        861 : CC01_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        862 : CC02_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        863 : CC03_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        864 : CC04_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        865 : CC05_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        866 : CC06_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        867 : CC07_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        868 : CC08_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        869 : CC09_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        870 : CC10_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        871 : CC11_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        872 : CC12_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        873 : CC13_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        874 : CC14_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        875 : CC15_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        876 : CC16_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        877 : CC17_GNB_PUSCH_RNN_CALC                                     :	     0.00
+        900N: CC00_GNB_PUSCH_MMSE_SYMB0                                   :	     0.15
+        901 : CC01_GNB_PUSCH_MMSE_SYMB0                                   :	     0.20
+        902 : CC02_GNB_PUSCH_MMSE_SYMB0                                   :	     0.20
+        903 : CC03_GNB_PUSCH_MMSE_SYMB0                                   :	     0.19
+        904 : CC04_GNB_PUSCH_MMSE_SYMB0                                   :	     0.20
+        905 : CC05_GNB_PUSCH_MMSE_SYMB0                                   :	     0.20
+        906 : CC06_GNB_PUSCH_MMSE_SYMB0                                   :	     0.20
+        907 : CC07_GNB_PUSCH_MMSE_SYMB0                                   :	     0.20
+        908 : CC08_GNB_PUSCH_MMSE_SYMB0                                   :	     0.20
+        909 : CC09_GNB_PUSCH_MMSE_SYMB0                                   :	     0.19
+        910 : CC10_GNB_PUSCH_MMSE_SYMB0                                   :	     0.20
+        911 : CC11_GNB_PUSCH_MMSE_SYMB0                                   :	     0.19
+        912 : CC12_GNB_PUSCH_MMSE_SYMB0                                   :	     0.20
+        913 : CC13_GNB_PUSCH_MMSE_SYMB0                                   :	     0.19
+        914 : CC14_GNB_PUSCH_MMSE_SYMB0                                   :	     0.20
+        915 : CC15_GNB_PUSCH_MMSE_SYMB0                                   :	     0.19
+        916 : CC16_GNB_PUSCH_MMSE_SYMB0                                   :	     0.18
+        917 : CC17_GNB_PUSCH_MMSE_SYMB0                                   :	     0.17
+        940N: CC00_GNB_PUSCH_MMSE_SYMB7                                   :	    25.92
+        941 : CC01_GNB_PUSCH_MMSE_SYMB7                                   :	    26.07
+        942 : CC02_GNB_PUSCH_MMSE_SYMB7                                   :	    25.84
+        943 : CC03_GNB_PUSCH_MMSE_SYMB7                                   :	    25.69
+        944 : CC04_GNB_PUSCH_MMSE_SYMB7                                   :	    25.79
+        945 : CC05_GNB_PUSCH_MMSE_SYMB7                                   :	    25.61
+        946 : CC06_GNB_PUSCH_MMSE_SYMB7                                   :	    25.41
+        947 : CC07_GNB_PUSCH_MMSE_SYMB7                                   :	    25.36
+        948 : CC08_GNB_PUSCH_MMSE_SYMB7                                   :	    25.07
+        949 : CC09_GNB_PUSCH_MMSE_SYMB7                                   :	    24.98
+        950 : CC10_GNB_PUSCH_MMSE_SYMB7                                   :	    25.18
+        951 : CC11_GNB_PUSCH_MMSE_SYMB7                                   :	    25.04
+        952 : CC12_GNB_PUSCH_MMSE_SYMB7                                   :	    25.26
+        953 : CC13_GNB_PUSCH_MMSE_SYMB7                                   :	    25.14
+        954 : CC14_GNB_PUSCH_MMSE_SYMB7                                   :	    25.21
+        955 : CC15_GNB_PUSCH_MMSE_SYMB7                                   :	    25.17
+        956 : CC16_GNB_PUSCH_MMSE_SYMB7                                   :	    25.03
+        957 : CC17_GNB_PUSCH_MMSE_SYMB7                                   :	    25.09
+        980N: CC00_GNB_PUSCH_DESCRAMBLE                                   :	     2.77
+        981 : CC01_GNB_PUSCH_DESCRAMBLE                                   :	     2.82
+        982 : CC02_GNB_PUSCH_DESCRAMBLE                                   :	     2.85
+        983 : CC03_GNB_PUSCH_DESCRAMBLE                                   :	     2.83
+        984 : CC04_GNB_PUSCH_DESCRAMBLE                                   :	     2.75
+        985 : CC05_GNB_PUSCH_DESCRAMBLE                                   :	     2.67
+        986 : CC06_GNB_PUSCH_DESCRAMBLE                                   :	     2.54
+        987 : CC07_GNB_PUSCH_DESCRAMBLE                                   :	     2.50
+        988 : CC08_GNB_PUSCH_DESCRAMBLE                                   :	     2.66
+        989 : CC09_GNB_PUSCH_DESCRAMBLE                                   :	     2.73
+        990 : CC10_GNB_PUSCH_DESCRAMBLE                                   :	     2.69
+        991 : CC11_GNB_PUSCH_DESCRAMBLE                                   :	     2.70
+        992 : CC12_GNB_PUSCH_DESCRAMBLE                                   :	     2.64
+        993 : CC13_GNB_PUSCH_DESCRAMBLE                                   :	     2.54
+        994 : CC14_GNB_PUSCH_DESCRAMBLE                                   :	     2.53
+        995 : CC15_GNB_PUSCH_DESCRAMBLE                                   :	     2.51
+        996 : CC16_GNB_PUSCH_DESCRAMBLE                                   :	     2.52
+        997 : CC17_GNB_PUSCH_DESCRAMBLE                                   :	     2.51
+       1060N: CC00_GNB_PUSCH_CB_SETUP                                     :	     2.48
+       1061 : CC01_GNB_PUSCH_CB_SETUP                                     :	     2.43
+       1062 : CC02_GNB_PUSCH_CB_SETUP                                     :	     2.47
+       1063 : CC03_GNB_PUSCH_CB_SETUP                                     :	     2.50
+       1064 : CC04_GNB_PUSCH_CB_SETUP                                     :	     2.41
+       1065 : CC05_GNB_PUSCH_CB_SETUP                                     :	     2.37
+       1066 : CC06_GNB_PUSCH_CB_SETUP                                     :	     2.29
+       1067 : CC07_GNB_PUSCH_CB_SETUP                                     :	     2.27
+       1068 : CC08_GNB_PUSCH_CB_SETUP                                     :	     2.17
+       1069 : CC09_GNB_PUSCH_CB_SETUP                                     :	     2.11
+       1070 : CC10_GNB_PUSCH_CB_SETUP                                     :	     2.24
+       1071 : CC11_GNB_PUSCH_CB_SETUP                                     :	     2.26
+       1072 : CC12_GNB_PUSCH_CB_SETUP                                     :	     2.23
+       1073 : CC13_GNB_PUSCH_CB_SETUP                                     :	     2.21
+       1074 : CC14_GNB_PUSCH_CB_SETUP                                     :	     2.16
+       1075 : CC15_GNB_PUSCH_CB_SETUP                                     :	     2.11
+       1076 : CC16_GNB_PUSCH_CB_SETUP                                     :	     2.16
+       1077 : CC17_GNB_PUSCH_CB_SETUP                                     :	     2.15
+       1020N: CC00_GNB_PUSCH_DECODER                                      :	     2.81
+       1021 : CC01_GNB_PUSCH_DECODER                                      :	     2.80
+       1022 : CC02_GNB_PUSCH_DECODER                                      :	     2.81
+       1023 : CC03_GNB_PUSCH_DECODER                                      :	     2.80
+       1024 : CC04_GNB_PUSCH_DECODER                                      :	     2.74
+       1025 : CC05_GNB_PUSCH_DECODER                                      :	     2.64
+       1026 : CC06_GNB_PUSCH_DECODER                                      :	     2.57
+       1027 : CC07_GNB_PUSCH_DECODER                                      :	     2.51
+       1028 : CC08_GNB_PUSCH_DECODER                                      :	     2.02
+       1029 : CC09_GNB_PUSCH_DECODER                                      :	     2.03
+       1030 : CC10_GNB_PUSCH_DECODER                                      :	     2.03
+       1031 : CC11_GNB_PUSCH_DECODER                                      :	     2.06
+       1032 : CC12_GNB_PUSCH_DECODER                                      :	     2.03
+       1033 : CC13_GNB_PUSCH_DECODER                                      :	     2.05
+       1034 : CC14_GNB_PUSCH_DECODER                                      :	     2.06
+       1035 : CC15_GNB_PUSCH_DECODER                                      :	     2.06
+       1036 : CC16_GNB_PUSCH_DECODER                                      :	     2.06
+       1037 : CC17_GNB_PUSCH_DECODER                                      :	     2.05
+       1100N: CC00_GNB_PUSCH_TB                                           :	     6.83
+       1101 : CC01_GNB_PUSCH_TB                                           :	     6.95
+       1102 : CC02_GNB_PUSCH_TB                                           :	     7.05
+       1103 : CC03_GNB_PUSCH_TB                                           :	     7.11
+       1104 : CC04_GNB_PUSCH_TB                                           :	     7.14
+       1105 : CC05_GNB_PUSCH_TB                                           :	     7.03
+       1106 : CC06_GNB_PUSCH_TB                                           :	     6.75
+       1107 : CC07_GNB_PUSCH_TB                                           :	     6.55
+       1108 : CC08_GNB_PUSCH_TB                                           :	     6.84
+       1109 : CC09_GNB_PUSCH_TB                                           :	     6.81
+       1110 : CC10_GNB_PUSCH_TB                                           :	     6.78
+       1111 : CC11_GNB_PUSCH_TB                                           :	     6.92
+       1112 : CC12_GNB_PUSCH_TB                                           :	     6.88
+       1113 : CC13_GNB_PUSCH_TB                                           :	     6.81
+       1114 : CC14_GNB_PUSCH_TB                                           :	     6.69
+       1115 : CC15_GNB_PUSCH_TB                                           :	     6.52
+       1116 : CC16_GNB_PUSCH_TB                                           :	     6.24
+       1117 : CC17_GNB_PUSCH_TB                                           :	     6.22
+       1140N: CC00_GNB_PUSCH_UCI_DECODER                                  :	     1.59
+       1141 : CC01_GNB_PUSCH_UCI_DECODER                                  :	     1.62
+       1142 : CC02_GNB_PUSCH_UCI_DECODER                                  :	     1.66
+       1143 : CC03_GNB_PUSCH_UCI_DECODER                                  :	     1.63
+       1144 : CC04_GNB_PUSCH_UCI_DECODER                                  :	     1.55
+       1145 : CC05_GNB_PUSCH_UCI_DECODER                                  :	     1.53
+       1146 : CC06_GNB_PUSCH_UCI_DECODER                                  :	     1.46
+       1147 : CC07_GNB_PUSCH_UCI_DECODER                                  :	     1.45
+       1148 : CC08_GNB_PUSCH_UCI_DECODER                                  :	     1.43
+       1149 : CC09_GNB_PUSCH_UCI_DECODER                                  :	     1.46
+       1150 : CC10_GNB_PUSCH_UCI_DECODER                                  :	     1.47
+       1151 : CC11_GNB_PUSCH_UCI_DECODER                                  :	     1.47
+       1152 : CC12_GNB_PUSCH_UCI_DECODER                                  :	     1.40
+       1153 : CC13_GNB_PUSCH_UCI_DECODER                                  :	     1.37
+       1154 : CC14_GNB_PUSCH_UCI_DECODER                                  :	     1.36
+       1155 : CC15_GNB_PUSCH_UCI_DECODER                                  :	     1.36
+       1156 : CC16_GNB_PUSCH_UCI_DECODER                                  :	     1.41
+       1157 : CC17_GNB_PUSCH_UCI_DECODER                                  :	     1.48
+       1180N: CC00_GNB_PUCCH_RX                                           :	    68.73
+       1181 : CC01_GNB_PUCCH_RX                                           :	    68.78
+       1182 : CC02_GNB_PUCCH_RX                                           :	    68.44
+       1183 : CC03_GNB_PUCCH_RX                                           :	    67.98
+       1184 : CC04_GNB_PUCCH_RX                                           :	    67.31
+       1185 : CC05_GNB_PUCCH_RX                                           :	    66.14
+       1186 : CC06_GNB_PUCCH_RX                                           :	    64.28
+       1187 : CC07_GNB_PUCCH_RX                                           :	    64.29
+       1188 : CC08_GNB_PUCCH_RX                                           :	    63.89
+       1189 : CC09_GNB_PUCCH_RX                                           :	    63.69
+       1190 : CC10_GNB_PUCCH_RX                                           :	    63.91
+       1191 : CC11_GNB_PUCCH_RX                                           :	    63.79
+       1192 : CC12_GNB_PUCCH_RX                                           :	    63.60
+       1193 : CC13_GNB_PUCCH_RX                                           :	    63.00
+       1194 : CC14_GNB_PUCCH_RX                                           :	    60.19
+       1195 : CC15_GNB_PUCCH_RX                                           :	    60.55
+       1196 : CC16_GNB_PUCCH_RX                                           :	    60.26
+       1197 : CC17_GNB_PUCCH_RX                                           :	    59.42
+       1220N: CC00_GNB_PRACH_PROCESS                                      :	     0.00
+       1221 : CC01_GNB_PRACH_PROCESS                                      :	     0.00
+       1222 : CC02_GNB_PRACH_PROCESS                                      :	     0.00
+       1223 : CC03_GNB_PRACH_PROCESS                                      :	     0.00
+       1224 : CC04_GNB_PRACH_PROCESS                                      :	     0.00
+       1225 : CC05_GNB_PRACH_PROCESS                                      :	     0.00
+       1226 : CC06_GNB_PRACH_PROCESS                                      :	     0.00
+       1227 : CC07_GNB_PRACH_PROCESS                                      :	     0.00
+       1228 : CC08_GNB_PRACH_PROCESS                                      :	     0.00
+       1229 : CC09_GNB_PRACH_PROCESS                                      :	     0.00
+       1230 : CC10_GNB_PRACH_PROCESS                                      :	     0.00
+       1231 : CC11_GNB_PRACH_PROCESS                                      :	     0.00
+       1232 : CC12_GNB_PRACH_PROCESS                                      :	     0.00
+       1233 : CC13_GNB_PRACH_PROCESS                                      :	     0.00
+       1234 : CC14_GNB_PRACH_PROCESS                                      :	     0.00
+       1235 : CC15_GNB_PRACH_PROCESS                                      :	     0.00
+       1236 : CC16_GNB_PRACH_PROCESS                                      :	     0.00
+       1237 : CC17_GNB_PRACH_PROCESS                                      :	     0.00
+       1260N: CC00_GNB_SRS_RX                                             :	     0.00
+       1261 : CC01_GNB_SRS_RX                                             :	     0.00
+       1262 : CC02_GNB_SRS_RX                                             :	     0.00
+       1263 : CC03_GNB_SRS_RX                                             :	     0.00
+       1264 : CC04_GNB_SRS_RX                                             :	     0.00
+       1265 : CC05_GNB_SRS_RX                                             :	     0.00
+       1266 : CC06_GNB_SRS_RX                                             :	     0.00
+       1267 : CC07_GNB_SRS_RX                                             :	     0.00
+       1268 : CC08_GNB_SRS_RX                                             :	     0.00
+       1269 : CC09_GNB_SRS_RX                                             :	     0.00
+       1270 : CC10_GNB_SRS_RX                                             :	     0.00
+       1271 : CC11_GNB_SRS_RX                                             :	     0.00
+       1272 : CC12_GNB_SRS_RX                                             :	     0.00
+       1273 : CC13_GNB_SRS_RX                                             :	     0.00
+       1274 : CC14_GNB_SRS_RX                                             :	     0.00
+       1275 : CC15_GNB_SRS_RX                                             :	     0.00
+       1276 : CC16_GNB_SRS_RX                                             :	     0.00
+       1277 : CC17_GNB_SRS_RX                                             :	     0.00
+       1300N: CC00_GNB_SRS_CE                                             :	     0.00
+       1301 : CC01_GNB_SRS_CE                                             :	     0.00
+       1302 : CC02_GNB_SRS_CE                                             :	     0.00
+       1303 : CC03_GNB_SRS_CE                                             :	     0.00
+       1304 : CC04_GNB_SRS_CE                                             :	     0.00
+       1305 : CC05_GNB_SRS_CE                                             :	     0.00
+       1306 : CC06_GNB_SRS_CE                                             :	     0.00
+       1307 : CC07_GNB_SRS_CE                                             :	     0.00
+       1308 : CC08_GNB_SRS_CE                                             :	     0.00
+       1309 : CC09_GNB_SRS_CE                                             :	     0.00
+       1310 : CC10_GNB_SRS_CE                                             :	     0.00
+       1311 : CC11_GNB_SRS_CE                                             :	     0.00
+       1312 : CC12_GNB_SRS_CE                                             :	     0.00
+       1313 : CC13_GNB_SRS_CE                                             :	     0.00
+       1314 : CC14_GNB_SRS_CE                                             :	     0.00
+       1315 : CC15_GNB_SRS_CE                                             :	     0.00
+       1316 : CC16_GNB_SRS_CE                                             :	     0.00
+       1317 : CC17_GNB_SRS_CE                                             :	     0.00
+       1340N: CC00_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1341 : CC01_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1342 : CC02_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1343 : CC03_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1344 : CC04_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1345 : CC05_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1346 : CC06_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1347 : CC07_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1348 : CC08_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1349 : CC09_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1350 : CC10_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1351 : CC11_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1352 : CC12_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1353 : CC13_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1354 : CC14_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1355 : CC15_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1356 : CC16_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1357 : CC17_GNB_SRS_FFT_CB_SETUP                                   :	     0.00
+       1380N: CC00_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1381 : CC01_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1382 : CC02_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1383 : CC03_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1384 : CC04_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1385 : CC05_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1386 : CC06_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1387 : CC07_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1388 : CC08_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1389 : CC09_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1390 : CC10_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1391 : CC11_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1392 : CC12_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1393 : CC13_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1394 : CC14_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1395 : CC15_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1396 : CC16_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1397 : CC17_GNB_SRS_FFT_RUN_FUNC                                   :	     0.00
+       1420N: CC00_GNB_SRS_CE_POST                                        :	     0.00
+       1421 : CC01_GNB_SRS_CE_POST                                        :	     0.00
+       1422 : CC02_GNB_SRS_CE_POST                                        :	     0.00
+       1423 : CC03_GNB_SRS_CE_POST                                        :	     0.00
+       1424 : CC04_GNB_SRS_CE_POST                                        :	     0.00
+       1425 : CC05_GNB_SRS_CE_POST                                        :	     0.00
+       1426 : CC06_GNB_SRS_CE_POST                                        :	     0.00
+       1427 : CC07_GNB_SRS_CE_POST                                        :	     0.00
+       1428 : CC08_GNB_SRS_CE_POST                                        :	     0.00
+       1429 : CC09_GNB_SRS_CE_POST                                        :	     0.00
+       1430 : CC10_GNB_SRS_CE_POST                                        :	     0.00
+       1431 : CC11_GNB_SRS_CE_POST                                        :	     0.00
+       1432 : CC12_GNB_SRS_CE_POST                                        :	     0.00
+       1433 : CC13_GNB_SRS_CE_POST                                        :	     0.00
+       1434 : CC14_GNB_SRS_CE_POST                                        :	     0.00
+       1435 : CC15_GNB_SRS_CE_POST                                        :	     0.00
+       1436 : CC16_GNB_SRS_CE_POST                                        :	     0.00
+       1437 : CC17_GNB_SRS_CE_POST                                        :	     0.00
+       1460N: CC00_GNB_SRS_REPORT                                         :	     0.00
+       1461 : CC01_GNB_SRS_REPORT                                         :	     0.00
+       1462 : CC02_GNB_SRS_REPORT                                         :	     0.00
+       1463 : CC03_GNB_SRS_REPORT                                         :	     0.00
+       1464 : CC04_GNB_SRS_REPORT                                         :	     0.00
+       1465 : CC05_GNB_SRS_REPORT                                         :	     0.00
+       1466 : CC06_GNB_SRS_REPORT                                         :	     0.00
+       1467 : CC07_GNB_SRS_REPORT                                         :	     0.00
+       1468 : CC08_GNB_SRS_REPORT                                         :	     0.00
+       1469 : CC09_GNB_SRS_REPORT                                         :	     0.00
+       1470 : CC10_GNB_SRS_REPORT                                         :	     0.00
+       1471 : CC11_GNB_SRS_REPORT                                         :	     0.00
+       1472 : CC12_GNB_SRS_REPORT                                         :	     0.00
+       1473 : CC13_GNB_SRS_REPORT                                         :	     0.00
+       1474 : CC14_GNB_SRS_REPORT                                         :	     0.00
+       1475 : CC15_GNB_SRS_REPORT                                         :	     0.00
+       1476 : CC16_GNB_SRS_REPORT                                         :	     0.00
+       1477 : CC17_GNB_SRS_REPORT                                         :	     0.00
+       1500N: CC00_GNB_UL_POST                                            :	     4.79
+       1501 : CC01_GNB_UL_POST                                            :	     4.94
+       1502 : CC02_GNB_UL_POST                                            :	     4.89
+       1503 : CC03_GNB_UL_POST                                            :	     4.68
+       1504 : CC04_GNB_UL_POST                                            :	     4.51
+       1505 : CC05_GNB_UL_POST                                            :	     4.56
+       1506 : CC06_GNB_UL_POST                                            :	     4.60
+       1507 : CC07_GNB_UL_POST                                            :	     4.54
+       1508 : CC08_GNB_UL_POST                                            :	     4.46
+       1509 : CC09_GNB_UL_POST                                            :	     4.59
+       1510 : CC10_GNB_UL_POST                                            :	     4.62
+       1511 : CC11_GNB_UL_POST                                            :	     4.57
+       1512 : CC12_GNB_UL_POST                                            :	     4.33
+       1513 : CC13_GNB_UL_POST                                            :	     4.31
+       1514 : CC14_GNB_UL_POST                                            :	     4.50
+       1515 : CC15_GNB_UL_POST                                            :	     4.58
+       1516 : CC16_GNB_UL_POST                                            :	     4.56
+       1517 : CC17_GNB_UL_POST                                            :	     4.35
+       1540N: CC00_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1541 : CC01_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1542 : CC02_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1543 : CC03_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1544 : CC04_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1545 : CC05_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1546 : CC06_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1547 : CC07_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1548 : CC08_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1549 : CC09_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1550 : CC10_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1551 : CC11_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1552 : CC12_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1553 : CC13_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1554 : CC14_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1555 : CC15_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1556 : CC16_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1557 : CC17_GNB_DL_BEAM_WEIGHT_TASK                                :	     0.00
+       1580N: CC00_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1581 : CC01_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1582 : CC02_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1583 : CC03_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1584 : CC04_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1585 : CC05_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1586 : CC06_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1587 : CC07_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1588 : CC08_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1589 : CC09_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1590 : CC10_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1591 : CC11_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1592 : CC12_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1593 : CC13_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1594 : CC14_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1595 : CC15_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1596 : CC16_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1597 : CC17_GNB_UL_BEAM_WEIGHT_TASK                                :	     0.00
+       1620N: CC00_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1621 : CC01_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1622 : CC02_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1623 : CC03_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1624 : CC04_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1625 : CC05_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1626 : CC06_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1627 : CC07_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1628 : CC08_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1629 : CC09_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1630 : CC10_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1631 : CC11_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1632 : CC12_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1633 : CC13_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1634 : CC14_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1635 : CC15_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1636 : CC16_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1637 : CC17_GNB_UL_PUCCH_BEAM_WEIGHT_TASK                          :	     0.00
+       1660N: CC00_GNB_DL_ORAN                                            :	     0.00
+       1661 : CC01_GNB_DL_ORAN                                            :	     0.00
+       1662 : CC02_GNB_DL_ORAN                                            :	     0.00
+       1663 : CC03_GNB_DL_ORAN                                            :	     0.00
+       1664 : CC04_GNB_DL_ORAN                                            :	     0.00
+       1665 : CC05_GNB_DL_ORAN                                            :	     0.00
+       1666 : CC06_GNB_DL_ORAN                                            :	     0.00
+       1667 : CC07_GNB_DL_ORAN                                            :	     0.00
+       1668 : CC08_GNB_DL_ORAN                                            :	     0.00
+       1669 : CC09_GNB_DL_ORAN                                            :	     0.00
+       1670 : CC10_GNB_DL_ORAN                                            :	     0.00
+       1671 : CC11_GNB_DL_ORAN                                            :	     0.00
+       1672 : CC12_GNB_DL_ORAN                                            :	     0.00
+       1673 : CC13_GNB_DL_ORAN                                            :	     0.00
+       1674 : CC14_GNB_DL_ORAN                                            :	     0.00
+       1675 : CC15_GNB_DL_ORAN                                            :	     0.00
+       1676 : CC16_GNB_DL_ORAN                                            :	     0.00
+       1677 : CC17_GNB_DL_ORAN                                            :	     0.00
+       1700N: CC00_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1701 : CC01_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1702 : CC02_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1703 : CC03_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1704 : CC04_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1705 : CC05_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1706 : CC06_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1707 : CC07_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1708 : CC08_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1709 : CC09_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1710 : CC10_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1711 : CC11_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1712 : CC12_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1713 : CC13_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1714 : CC14_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1715 : CC15_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1716 : CC16_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1717 : CC17_GNB_DL_IQ_COMPRESS                                     :	     0.00
+       1740N: CC00_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1741 : CC01_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1742 : CC02_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1743 : CC03_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1744 : CC04_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1745 : CC05_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1746 : CC06_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1747 : CC07_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1748 : CC08_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1749 : CC09_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1750 : CC10_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1751 : CC11_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1752 : CC12_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1753 : CC13_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1754 : CC14_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1755 : CC15_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1756 : CC16_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1757 : CC17_GNB_UL_IQ_DECOMPRESS                                   :	     0.00
+       1780N: CC00_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1781 : CC01_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1782 : CC02_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1783 : CC03_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1784 : CC04_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1785 : CC05_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1786 : CC06_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1787 : CC07_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1788 : CC08_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1789 : CC09_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1790 : CC10_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1791 : CC11_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1792 : CC12_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1793 : CC13_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1794 : CC14_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1795 : CC15_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1796 : CC16_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1797 : CC17_GNB_DL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1820N: CC00_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1821 : CC01_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1822 : CC02_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1823 : CC03_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1824 : CC04_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1825 : CC05_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1826 : CC06_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1827 : CC07_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1828 : CC08_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1829 : CC09_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1830 : CC10_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1831 : CC11_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1832 : CC12_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1833 : CC13_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1834 : CC14_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1835 : CC15_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1836 : CC16_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1837 : CC17_GNB_UL_BEAM_WEIGHT_COMPRESS                            :	     0.00
+       1860N: CC00_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1861 : CC01_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1862 : CC02_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1863 : CC03_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1864 : CC04_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1865 : CC05_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1866 : CC06_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1867 : CC07_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1868 : CC08_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1869 : CC09_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1870 : CC10_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1871 : CC11_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1872 : CC12_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1873 : CC13_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1874 : CC14_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1875 : CC15_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1876 : CC16_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1877 : CC17_GNB_UL_SRS_IQ_DECOMPRESS                               :	     0.00
+       1900N: CC00_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1901 : CC01_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1902 : CC02_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1903 : CC03_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1904 : CC04_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1905 : CC05_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1906 : CC06_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1907 : CC07_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1908 : CC08_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1909 : CC09_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1910 : CC10_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1911 : CC11_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1912 : CC12_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1913 : CC13_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1914 : CC14_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1915 : CC15_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1916 : CC16_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1917 : CC17_GNB_DL_OFDM_CTRL_COMPRESS                              :	     0.00
+       1940N: CC00_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1941 : CC01_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1942 : CC02_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1943 : CC03_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1944 : CC04_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1945 : CC05_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1946 : CC06_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1947 : CC07_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1948 : CC08_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1949 : CC09_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1950 : CC10_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1951 : CC11_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1952 : CC12_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1953 : CC13_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1954 : CC14_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1955 : CC15_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1956 : CC16_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1957 : CC17_GNB_DL_OFDM_RS_COMPRESS                                :	     0.00
+       1980N: CC00_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1981 : CC01_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1982 : CC02_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1983 : CC03_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1984 : CC04_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1985 : CC05_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1986 : CC06_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1987 : CC07_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1988 : CC08_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1989 : CC09_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1990 : CC10_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1991 : CC11_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1992 : CC12_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1993 : CC13_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1994 : CC14_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1995 : CC15_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1996 : CC16_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       1997 : CC17_GNB_DL_OFDM_DATA_COMPRESS                              :	     0.00
+       2020N: CC00_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2021 : CC01_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2022 : CC02_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2023 : CC03_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2024 : CC04_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2025 : CC05_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2026 : CC06_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2027 : CC07_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2028 : CC08_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2029 : CC09_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2030 : CC10_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2031 : CC11_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2032 : CC12_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2033 : CC13_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2034 : CC14_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2035 : CC15_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2036 : CC16_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2037 : CC17_GNB_UL_IQ_DECOMP_PUSCH                                 :	     0.00
+       2060N: CC00_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2061 : CC01_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2062 : CC02_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2063 : CC03_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2064 : CC04_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2065 : CC05_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2066 : CC06_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2067 : CC07_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2068 : CC08_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2069 : CC09_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2070 : CC10_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2071 : CC11_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2072 : CC12_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2073 : CC13_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2074 : CC14_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2075 : CC15_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2076 : CC16_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+       2077 : CC17_GNB_UL_IQ_DECOMP_PUCCH                                 :	     0.00
+------------------------------------------------------------------------------------------------------------
+    Latency Breakdown (Across all Cells (non-URLLC))
+             LATENCY_TASKNAME                                                     MIN  HIST_LOW       AVG  HIST_HIGH       MAX
+       3320: GNB_DL_LINK                          CC 0                    :      0.00    265.00    272.72     280.00    320.00
+       3321: GNB_DL_LINK                          CC 1                    :      0.00    265.00    273.54     305.00    324.00
+       3322: GNB_DL_LINK                          CC 2                    :      0.00    265.00    272.22     280.00    315.00
+       3323: GNB_DL_LINK                          CC 3                    :      0.00    265.00    272.05     280.00    312.00
+       3324: GNB_DL_LINK                          CC 4                    :      0.00    265.00    272.35     280.00    315.00
+       3325: GNB_DL_LINK                          CC 5                    :      0.00    265.00    273.19     280.00    307.00
+       3326: GNB_DL_LINK                          CC 6                    :      0.00    270.00    274.48     280.00    298.00
+       3327: GNB_DL_LINK                          CC 7                    :      0.00    270.00    274.92     280.00    307.00
+       3328: GNB_DL_LINK                          CC 8                    :      0.00    270.00    275.10     280.00    300.00
+       3329: GNB_DL_LINK                          CC 9                    :      0.00    270.00    275.38     280.00    299.00
+       3330: GNB_DL_LINK                          CC10                    :      0.00    270.00    275.90     285.00    317.00
+       3331: GNB_DL_LINK                          CC11                    :      0.00    270.00    278.15     285.00    308.00
+       3332: GNB_DL_LINK                          CC12                    :      0.00    275.00    280.93     290.00    313.00
+       3333: GNB_DL_LINK                          CC13                    :      0.00    275.00    285.25     305.00    318.00
+       3334: GNB_DL_LINK                          CC14                    :      0.00    280.00    303.07     315.00    331.00
+       3335: GNB_DL_LINK                          CC15                    :      0.00    300.00    306.42     315.00    334.00
+       3336: GNB_DL_LINK                          CC16                    :      0.00    270.00    273.79     280.00    299.00
+       3337: GNB_DL_LINK                          CC17                    :      0.00    270.00    274.03     280.00    297.00
+             GNB_DL_LINK                          AVG (MU 0)              :      0.00    300.00    306.42     315.00    334.00
+       3360: GNB_UL_LINK                          CC 0                    :      0.00    560.00    574.69     585.00   9635.00
+       3361: GNB_UL_LINK                          CC 1                    :      0.00    565.00    576.12     585.00   9637.00
+       3362: GNB_UL_LINK                          CC 2                    :      0.00    565.00    577.70     585.00   9636.00
+       3363: GNB_UL_LINK                          CC 3                    :      0.00    565.00    579.53     585.00   9638.00
+       3364: GNB_UL_LINK                          CC 4                    :      0.00    570.00    582.28     590.00   9642.00
+       3365: GNB_UL_LINK                          CC 5                    :      0.00    570.00    583.65     590.00   9642.00
+       3366: GNB_UL_LINK                          CC 6                    :      0.00    570.00    585.33     595.00   9643.00
+       3367: GNB_UL_LINK                          CC 7                    :      0.00    575.00    586.86     595.00   9645.00
+       3368: GNB_UL_LINK                          CC 8                    :      0.00    575.00    589.25     600.00   9649.00
+       3369: GNB_UL_LINK                          CC 9                    :      0.00    580.00    590.97     600.00   9649.00
+       3370: GNB_UL_LINK                          CC10                    :      0.00    580.00    592.57     600.00   9651.00
+       3371: GNB_UL_LINK                          CC11                    :      0.00    580.00    593.97     605.00   9651.00
+       3372: GNB_UL_LINK                          CC12                    :      0.00    585.00    596.17     605.00   9656.00
+       3373: GNB_UL_LINK                          CC13                    :      0.00    585.00    600.81     620.00   9655.00
+       3374: GNB_UL_LINK                          CC14                    :      0.00    610.00    627.58     640.00   9684.00
+       3375: GNB_UL_LINK                          CC15                    :      0.00    610.00    629.57     640.00   9684.00
+       3376: GNB_UL_LINK                          CC16                    :      0.00    615.00    631.16     640.00   9697.00
+       3377: GNB_UL_LINK                          CC17                    :      0.00    615.00    631.30     640.00   9697.00
+             GNB_UL_LINK                          AVG (MU 0)              :      0.00    615.00    631.30     640.00   9697.00
+       3280: GNB_SRS_LINK                         CC 0                    :      0.00      0.00      0.00       0.00      0.00
+       3281: GNB_SRS_LINK                         CC 1                    :      0.00      0.00      0.00       0.00      0.00
+       3282: GNB_SRS_LINK                         CC 2                    :      0.00      0.00      0.00       0.00      0.00
+       3283: GNB_SRS_LINK                         CC 3                    :      0.00      0.00      0.00       0.00      0.00
+       3284: GNB_SRS_LINK                         CC 4                    :      0.00      0.00      0.00       0.00      0.00
+       3285: GNB_SRS_LINK                         CC 5                    :      0.00      0.00      0.00       0.00      0.00
+       3286: GNB_SRS_LINK                         CC 6                    :      0.00      0.00      0.00       0.00      0.00
+       3287: GNB_SRS_LINK                         CC 7                    :      0.00      0.00      0.00       0.00      0.00
+       3288: GNB_SRS_LINK                         CC 8                    :      0.00      0.00      0.00       0.00      0.00
+       3289: GNB_SRS_LINK                         CC 9                    :      0.00      0.00      0.00       0.00      0.00
+       3290: GNB_SRS_LINK                         CC10                    :      0.00      0.00      0.00       0.00      0.00
+       3291: GNB_SRS_LINK                         CC11                    :      0.00      0.00      0.00       0.00      0.00
+       3292: GNB_SRS_LINK                         CC12                    :      0.00      0.00      0.00       0.00      0.00
+       3293: GNB_SRS_LINK                         CC13                    :      0.00      0.00      0.00       0.00      0.00
+       3294: GNB_SRS_LINK                         CC14                    :      0.00      0.00      0.00       0.00      0.00
+       3295: GNB_SRS_LINK                         CC15                    :      0.00      0.00      0.00       0.00      0.00
+       3296: GNB_SRS_LINK                         CC16                    :      0.00      0.00      0.00       0.00      0.00
+       3297: GNB_SRS_LINK                         CC17                    :      0.00      0.00      0.00       0.00      0.00
+             GNB_SRS_LINK                         AVG (MU 0)              :      0.00      0.00      0.00       0.00      0.00
+       3200: GNB_DL_FEC_LINK                      CC 0                    :      0.00     10.00     18.23      28.00    142.00
+       3201: GNB_DL_FEC_LINK                      CC 1                    :      0.00     12.00     22.64      82.00    145.00
+       3202: GNB_DL_FEC_LINK                      CC 2                    :      0.00     14.00     24.02      28.00     91.00
+       3203: GNB_DL_FEC_LINK                      CC 3                    :      0.00     20.00     25.04      30.00     87.00
+       3204: GNB_DL_FEC_LINK                      CC 4                    :      0.00     20.00     26.28      34.00     84.00
+       3205: GNB_DL_FEC_LINK                      CC 5                    :      0.00     22.00     34.48      46.00     80.00
+       3206: GNB_DL_FEC_LINK                      CC 6                    :      0.00     34.00     43.35      50.00     52.00
+       3207: GNB_DL_FEC_LINK                      CC 7                    :      0.00     40.00     45.20      50.00     69.00
+       3208: GNB_DL_FEC_LINK                      CC 8                    :      0.00     40.00     46.66      54.00     58.00
+       3209: GNB_DL_FEC_LINK                      CC 9                    :      0.00     44.00     51.48      56.00     61.00
+       3210: GNB_DL_FEC_LINK                      CC10                    :      0.00     48.00     53.32      60.00     65.00
+       3211: GNB_DL_FEC_LINK                      CC11                    :      0.00     50.00     57.19      64.00     89.00
+       3212: GNB_DL_FEC_LINK                      CC12                    :      0.00     52.00     60.45      66.00     88.00
+       3213: GNB_DL_FEC_LINK                      CC13                    :      0.00     58.00     62.97      70.00     88.00
+       3214: GNB_DL_FEC_LINK                      CC14                    :      0.00     60.00     67.52      74.00    115.00
+       3215: GNB_DL_FEC_LINK                      CC15                    :      0.00     64.00     71.20      76.00    133.00
+       3216: GNB_DL_FEC_LINK                      CC16                    :      0.00     20.00     25.01      30.00     38.00
+       3217: GNB_DL_FEC_LINK                      CC17                    :      0.00     20.00     25.31      32.00     37.00
+             GNB_DL_FEC_LINK                      AVG (MU 0)              :      0.00     64.00     71.20      82.00    145.00
+       3240: GNB_UL_FEC_LINK                      CC 0                    :      0.00     18.00     30.45      64.00     73.00
+       3241: GNB_UL_FEC_LINK                      CC 1                    :      0.00     20.00     33.91      62.00     72.00
+       3242: GNB_UL_FEC_LINK                      CC 2                    :      0.00     22.00     36.70      62.00     71.00
+       3243: GNB_UL_FEC_LINK                      CC 3                    :      0.00     22.00     36.76      52.00     70.00
+       3244: GNB_UL_FEC_LINK                      CC 4                    :      0.00     26.00     40.24      52.00     69.00
+       3245: GNB_UL_FEC_LINK                      CC 5                    :      0.00     26.00     43.20      54.00     67.00
+       3246: GNB_UL_FEC_LINK                      CC 6                    :      0.00     34.00     46.75      58.00     74.00
+       3247: GNB_UL_FEC_LINK                      CC 7                    :      0.00     38.00     50.84      62.00     69.00
+       3248: GNB_UL_FEC_LINK                      CC 8                    :      0.00     18.00     28.31      62.00     71.00
+       3249: GNB_UL_FEC_LINK                      CC 9                    :      0.00     20.00     29.65      50.00     75.00
+       3250: GNB_UL_FEC_LINK                      CC10                    :      0.00     24.00     35.96      62.00     69.00
+       3251: GNB_UL_FEC_LINK                      CC11                    :      0.00     26.00     36.47      48.00     67.00
+       3252: GNB_UL_FEC_LINK                      CC12                    :      0.00     30.00     40.70      50.00     66.00
+       3253: GNB_UL_FEC_LINK                      CC13                    :      0.00     34.00     44.55      54.00     66.00
+       3254: GNB_UL_FEC_LINK                      CC14                    :      0.00     34.00     46.47      56.00     62.00
+       3255: GNB_UL_FEC_LINK                      CC15                    :      0.00     36.00     49.33      60.00     67.00
+       3256: GNB_UL_FEC_LINK                      CC16                    :      0.00     18.00     23.33      28.00     50.00
+       3257: GNB_UL_FEC_LINK                      CC17                    :      0.00     16.00     23.25      30.00     58.00
+             GNB_UL_FEC_LINK                      AVG (MU 0)              :      0.00     38.00     50.84      64.00     75.00
+       3400: GNB_UL_SRS_FFT_LINK                  CC 0                    :      0.00      0.00      0.00       0.00      0.00
+       3401: GNB_UL_SRS_FFT_LINK                  CC 1                    :      0.00      0.00      0.00       0.00      0.00
+       3402: GNB_UL_SRS_FFT_LINK                  CC 2                    :      0.00      0.00      0.00       0.00      0.00
+       3403: GNB_UL_SRS_FFT_LINK                  CC 3                    :      0.00      0.00      0.00       0.00      0.00
+       3404: GNB_UL_SRS_FFT_LINK                  CC 4                    :      0.00      0.00      0.00       0.00      0.00
+       3405: GNB_UL_SRS_FFT_LINK                  CC 5                    :      0.00      0.00      0.00       0.00      0.00
+       3406: GNB_UL_SRS_FFT_LINK                  CC 6                    :      0.00      0.00      0.00       0.00      0.00
+       3407: GNB_UL_SRS_FFT_LINK                  CC 7                    :      0.00      0.00      0.00       0.00      0.00
+       3408: GNB_UL_SRS_FFT_LINK                  CC 8                    :      0.00      0.00      0.00       0.00      0.00
+       3409: GNB_UL_SRS_FFT_LINK                  CC 9                    :      0.00      0.00      0.00       0.00      0.00
+       3410: GNB_UL_SRS_FFT_LINK                  CC10                    :      0.00      0.00      0.00       0.00      0.00
+       3411: GNB_UL_SRS_FFT_LINK                  CC11                    :      0.00      0.00      0.00       0.00      0.00
+       3412: GNB_UL_SRS_FFT_LINK                  CC12                    :      0.00      0.00      0.00       0.00      0.00
+       3413: GNB_UL_SRS_FFT_LINK                  CC13                    :      0.00      0.00      0.00       0.00      0.00
+       3414: GNB_UL_SRS_FFT_LINK                  CC14                    :      0.00      0.00      0.00       0.00      0.00
+       3415: GNB_UL_SRS_FFT_LINK                  CC15                    :      0.00      0.00      0.00       0.00      0.00
+       3416: GNB_UL_SRS_FFT_LINK                  CC16                    :      0.00      0.00      0.00       0.00      0.00
+       3417: GNB_UL_SRS_FFT_LINK                  CC17                    :      0.00      0.00      0.00       0.00      0.00
+             GNB_UL_SRS_FFT_LINK                  AVG (MU 0)              :      0.00      0.00      0.00       0.00      0.00
+------------------------------------------------------------------------------------------------------------
+====~~~~====~~~~====~~~~====~~~~====~~~~====~~~~====~~~~====~~~~====~~~~====~~~~====~~~~====~~~~====~~~~====~~~~~~~~====~~~~====~~~~
+

@@ -1,0 +1,430 @@
+/*-------------------------------------------------------------------------------
+ * For Tables in the doxygen comments
+ *-----------------------------------*/
+
+:root {
+  --color1-main: rgb(84,91,96);
+  --color1-inv: rgb(251,234,88);
+  --color2-main: rgb(139,125,171);
+  --color2-inv: rgb(215,174,183);
+  --color3-main: rgb(74,131,183);
+  --color3-inv: rgb(240,187,162);
+  --color4-main: rgb(140,140,140);
+  --color4-inv: rgb(223,239,90);
+  --color5-main: rgb(73,96,118);
+  --color5-inv: rgb(194,241,219);
+  --color6-main: rgb(120,94,135);
+  --color6-inv: rgb(249,248,129);
+  --color7-main: rgb(85,90,96);
+  --color7-inv: rgb(242,192,128);
+  --color8-main: rgb(104,139,105);
+  --color8-inv: rgb(179,205,142);
+  --color9-main: #CD5C5C;
+  --color9-inv: #FFA07A;
+  --color-borders: #525f7f;
+  --color-header: rgb(77,194,37);
+}
+
+.main_body {
+  //background: #f6f9fc;
+  font-family: "Open Sans", sans-serif;
+  color: #525f7f;
+}
+
+.main_div {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+  margin: 5% auto;
+}
+
+.release_div {
+  background: #fff;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+
+.release_content {
+  padding: 20px;
+}
+
+/* -----------------------------------------------------------------------------
+   Release Dates (Oct 2017, Jan 2013, etc)
+   ----------------------------------------------------------------------------- */
+.release_date {
+  font-size: 21px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.release_div1 .release_date {
+  color: var(--color1-inv);
+}
+.release_div2 .release_date {
+  color: var(--color2-inv);
+}
+.release_div3 .release_date {
+  color: var(--color3-inv);
+}
+.release_div4 .release_date {
+  color: var(--color4-inv);
+}
+.release_div5 .release_date {
+  color: var(--color5-inv);
+}
+.release_div6 .release_date {
+  color: var(--color6-inv);
+}
+.release_div7 .release_date {
+  color: var(--color7-inv);
+}
+.release_div8 .release_date {
+  color: var(--color8-inv);
+}
+.release_div9 .release_date {
+  color: var(--color9-inv);
+}
+
+/* -----------------------------------------------------------------------------
+   Release Versions (Release 1.1, Release 1.2, etc)
+   ----------------------------------------------------------------------------- */
+.release_version {
+  font-size: 16px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.release_div1 .release_version {
+  color: var(--color1-main);
+}
+.release_div2 .release_version {
+  color: var(--color2-main);
+}
+.release_div3 .release_version {
+  color: var(--color3-main);
+}
+.release_div4 .release_version {
+  color: var(--color4-main);
+}
+.release_div5 .release_version {
+  color: var(--color5-main);
+}
+.release_div6 .release_version {
+  color: var(--color6-main);
+}
+.release_div7 .release_version {
+  color: var(--color7-main);
+}
+.release_div8 .release_version {
+  color: var(--color8-main);
+}
+.release_div9 .release_version {
+  color: var(--color9-main);
+}
+
+/* -----------------------------------------------------------------------------
+   Release Date Container and Release Numbers (1,2,3,4)
+   ----------------------------------------------------------------------------- */
+.release_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 40%;
+  font-size: 28px;
+  padding: 20px;
+  max-width: 100px;
+}
+
+.release_div1 .release_container {
+  background: var(--color1-main);
+  color: var(--color1-main);
+}
+
+.release_div2 .release_container {
+  background: var(--color2-main);
+  color: var(--color2-main);
+}
+
+.release_div3 .release_container {
+  background: var(--color3-main);
+  color: var(--color3-main);
+}
+
+.release_div4 .release_container {
+  background: var(--color4-main);
+  color: var(--color4-main);
+}
+
+.release_div5 .release_container {
+  background: var(--color5-main);
+  color: var(--color5-main);
+}
+
+.release_div6 .release_container {
+  background: var(--color6-main);
+  color: var(--color6-main);
+}
+
+.release_div7 .release_container {
+  background: var(--color7-main);
+  color: var(--color7-main);
+}
+
+.release_div8 .release_container {
+  background: var(--color8-main);
+  color: var(--color8-main);
+}
+
+.release_div9 .release_container {
+  background: var(--color9-main);
+  color: var(--color9-main);
+}
+
+.release_container b {
+  position: absolute;
+  top: 50%;
+  left: -67px;
+  font-size: 21px;
+  transform: translateY(-50%);
+}
+
+
+/* -----------------------------------------------------------------------------
+   Release Numbers Circle
+   ----------------------------------------------------------------------------- */
+.release_div:before {
+  content: "";
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  border-radius: 100%;
+  left: -6rem;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+
+.release_div1:before {
+  background: var(--color1-inv);
+  border: 0px solid var(--color1-main);
+}
+
+.release_div2:before {
+  background: var(--color2-inv);
+  border-color: var(--color2-main);
+}
+
+.release_div3:before {
+  background: var(--color3-inv);
+  border-color: var(--color3-main);
+}
+
+.release_div4:before {
+  background: var(--color4-inv);
+  border-color: var(--color4-main);
+}
+
+.release_div5:before {
+  background: var(--color5-inv);
+  border-color: var(--color5-main);
+}
+
+.release_div6:before {
+  background: var(--color6-inv);
+  border-color: var(--color6-main);
+}
+
+.release_div7:before {
+  background: var(--color7-inv);
+  border-color: var(--color7-main);
+}
+
+.release_div8:before {
+  background: var(--color8-inv);
+  border-color: var(--color8-main);
+}
+
+.release_div9:before {
+  background: var(--color9-inv);
+  border-color: var(--color9-main);
+}
+
+.release_div3:before {
+  background: var(--color3-inv);
+  border-color: var(--color3-main);
+}
+
+
+/* -----------------------------------------------------------------------------
+   Lines
+   ----------------------------------------------------------------------------- */
+.release_div:after {
+  content: "";
+  width: 3px;
+  height: 120%;
+  position: absolute;
+  top: 52%;
+  left: -3.5rem;
+  z-index: -1;
+}
+
+.release_div1:after {
+  background: var(--color1-main);
+}
+
+.release_div2:after {
+  background: var(--color2-main);
+}
+
+.release_div3:after {
+  background: var(--color3-main);
+}
+
+.release_div4:after {
+  background: var(--color4-main);
+}
+
+.release_div5:after {
+  background: var(--color5-main);
+}
+
+.release_div6:after {
+  background: var(--color6-main);
+}
+
+.release_div7:after {
+  background: var(--color7-main);
+}
+
+.release_div8:after {
+  background: var(--color8-main);
+}
+
+.release_div9:after {
+  background: var(--color9-main);
+}
+
+.release_div:last-child:after {
+  content: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.div_features {
+  color: #525f7f;
+  font-family: arial, sans-serif;
+}
+
+.features {
+  display: flex;
+}
+
+.features .features_image {
+  padding: 1em 1em;
+}
+
+.features .features_image > div {
+  position: relative;
+  text-align: center;
+  font-size: 2em;
+}
+
+.features .features_image img {
+  border-radius: 25%;
+  height: 150px;
+  width: 150px;
+  border: 2px solid var(--color-borders);
+  margin-bottom: 50px;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+
+.features .features_details {
+  position: relative;
+  flex-grow: 1;
+}
+
+.features .features_details > div {
+  border: 1px solid var(--color-borders);
+  border-radius: 0.5em;
+  padding: 1.5em;
+  margin: 1em 0;
+  margin-left: 1em;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+
+.features .features_details > div h1 {
+  color: var(--color-header);
+  font-size: 1.4em;
+  margin: 0;
+  padding: 0 0 0.5em 0;
+  letter-spacing: 0.1em;
+}
+
+.features .features_details1 {
+  position: relative;
+  flex-grow: 1;
+}
+
+.features .features_details1 > div {
+  border: 1px solid var(--color-borders);
+  border-radius: 0.5em;
+  padding: 1.5em;
+  margin: 1em 0;
+  margin-left: 1em;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+
+.features .features_details1 > div h1 {
+  color: var(--color-header);
+  font-size: 1.4em;
+  margin: 0;
+  padding: 0 0 0.5em 0;
+  letter-spacing: 0.1em;
+}
+
+
+/* --------------------------------------------------------------------------------------------
+   Horizontal line from image to description
+   -------------------------------------------------------------------------------------------- */
+.features .features_image > div::after {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-bottom: 2px solid var(--color-borders);
+  position: absolute;
+  top: 1.5em;
+  left: 1em;
+  z-index: -2;
+}
+
+
+/* --------------------------------------------------------------------------------------------
+   Vertical line from image to next image
+   -------------------------------------------------------------------------------------------- */
+.features .features_details::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  border-left: 2px solid var(--color-borders);
+  position: absolute;
+  top: 15px;
+  left: -6.0em;
+  z-index: -1;
+}
