@@ -1,7 +1,0 @@
-spawn kubectl exec -it flexran-binary-release -c flexran-l1app /bin/bash
-kubectl exec [POD] [COMMAND] is DEPRECATED and will be removed in a future version. Use kubectl exec [POD] -- [COMMAND] instead.
-error: unable to upgrade connection: container not found ("flexran-l1app")
-send: spawn id exp5 not open
-    while executing
-"send "echo \"kill -9 \\\$(ps -ef |grep -E 'l1app' |awk '{print\\\$2}')\" > kill.sh; bash kill.sh\r""
-    (file "./l1.ex" line 9)
